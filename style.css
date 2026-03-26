@@ -268,12 +268,12 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .calendly-wrap { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin-top: 40px; }
 .consulta-extra { max-width: 700px; margin: 50px auto 0; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.2); }
 .consulta-head { text-align: center; margin-bottom: 28px; }
-.consulta-head h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--marron); margin-bottom: 8px; font-weight: 300; }
+.consulta-head h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--rosa2); margin-bottom: 8px; font-weight: 300; }
 .consulta-head p { font-size: 0.88rem; color: var(--texto-sua); }
 .beauty-form { display: flex; flex-direction: column; gap: 14px; }
 .form-group { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.beauty-form input, .beauty-form select, .beauty-form textarea { width: 100%; padding: 12px 18px; border: 1px solid var(--borde); border-radius: 12px; font-family: 'Jost', sans-serif; font-size: 0.88rem; background: var(--crema2); color: var(--texto); outline: none; transition: border-color 0.3s; }
-.beauty-form input:focus, .beauty-form select:focus, .beauty-form textarea:focus { border-color: var(--marron-med); }
+.beauty-form input, .beauty-form select, .beauty-form textarea { width: 100%; padding: 12px 18px; border: 1px solid var(--rosa3); border-radius: 12px; font-family: 'Jost', sans-serif; font-size: 0.88rem; background: var(--crema2); color: var(--texto); outline: none; transition: border-color 0.3s; }
+.beauty-form input:focus, .beauty-form select:focus, .beauty-form textarea:focus { border-color: var(--rosa2); }
 .beauty-form button { cursor: pointer; width: 100%; margin-top: 6px; }
 
 /* ══ CONTACTO ══ */
