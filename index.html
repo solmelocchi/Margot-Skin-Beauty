@@ -16,6 +16,7 @@
   <a href="#tratamientos"  onclick="closeNav()">Tratamientos</a>
   <a href="#antes-despues" onclick="closeNav()">Resultados</a>
   <a href="#productos"     onclick="closeNav()">Productos</a>
+  <a href="#promos"        onclick="closeNav()">Promos</a>
   <a href="#faq"           onclick="closeNav()">Preguntas</a>
   <a href="#turnos"        onclick="closeNav()">Turnos</a>
   <a href="#contacto"      onclick="closeNav()">Contacto</a>
@@ -31,12 +32,13 @@
       </div>
     </div>
     <nav class="nav">
-      <a href="#inicio" class="nav-cta">Inicio</a>
-      <a href="#tratamientos" class="nav-cta">Tratamientos</a>
-      <a href="#antes-despues" class="nav-cta">Resultados</a>
-     <a href="#productos" class="nav-cta">Productos</a>
-     <a href="#faq" class="nav-cta">FAQ</a>
-      <a href="#turnos" class="nav-cta">Reservar turno</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#antes-despues">Resultados</a>
+      <a href="#productos">Productos</a>
+      <a href="#promos">Promos</a>
+      <a href="#faq">FAQ</a>
+       <a href="#turnos">Reservar turno</a>
     </nav>
     <button class="hamburger" id="hamburger" onclick="toggleNav()">
       <span></span><span></span><span></span>
@@ -59,7 +61,6 @@
 </section>
 
 
-
 <!-- SOBRE MÍ -->
 <section class="sobre">
   <div class="sobre-inner">
@@ -76,26 +77,25 @@
       <p>Soy cosmetóloga profesional especializada en tratamientos faciales personalizados. Mi misión es que cada clienta se sienta cómoda, cuidada y vea resultados reales desde la primera sesión.</p>
       <p>Trabajo con productos de alta calidad y técnicas actualizadas para ofrecerte lo mejor en cuidado de la piel.</p>
       <div class="sobre-vals">
-        <div class="val"> Productos premium</div>
-        <div class="val"> Atención personalizada</div>
-        <div class="val"> Resultados visibles</div>
-        <div class="val"> Técnicas avanzadas</div>
+        <div class="val">Productos premium</div>
+        <div class="val">Atención personalizada</div>
+        <div class="val">Resultados visibles</div>
+        <div class="val">Técnicas avanzadas</div>
       </div>
       <a href="#turnos" class="btn-primary">Reservar ahora</a>
     </div>
   </div>
 </section>
 
-<!-- TRATAMIENTOS — acordeón por categoría -->
+<!-- TRATAMIENTOS — acordeón -->
 <section id="tratamientos" class="tratamientos">
   <div class="tratamientos-inner">
     <div class="section-head fade-in">
-      <span class="tag">✦ Lo que ofrezco</span>
-      <h2>Nuestros tratamientos</h2>
-      <p class="section-sub">Hacé clic en cada categoría para ver los tratamientos disponibles</p>
+      <span class="tag light">✦ Lo que ofrezco</span>
+      <h2 class="white">Nuestros tratamientos</h2>
+      <p class="sub-light">Hacé clic en cada categoría para ver los tratamientos disponibles</p>
     </div>
 
-    <!-- Categoría 1 -->
     <div class="trat-acord fade-in">
       <button class="acord-btn" onclick="toggleAcord(this)">
         <div class="acord-left">
@@ -106,44 +106,16 @@
       </button>
       <div class="acord-body">
         <div class="trat-grid">
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Limpieza simple</h4>
-            <p>Limpieza básica para mantener la piel saludable y fresca.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Limpieza profunda</h4>
-            <p>Elimina impurezas y puntos negros, dejando la piel renovada.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Con extracciones</h4>
-            <p>Tratamiento intensivo para remover comedones e impurezas profundas.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Con microneedling</h4>
-            <p>Estimula la regeneración de la piel y mejora textura y luminosidad.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Con dermaplaning</h4>
-            <p>Exfoliación profunda que elimina células muertas y vello facial.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
+          <div class="trat-card"><h4>Limpieza simple</h4><p>Limpieza básica para mantener la piel saludable y fresca.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Limpieza profunda</h4><p>Elimina impurezas y puntos negros, dejando la piel renovada.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Con extracciones</h4><p>Tratamiento intensivo para remover comedones e impurezas profundas.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Con microneedling</h4><p>Estimula la regeneración de la piel y mejora textura y luminosidad.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Con dermaplaning</h4><p>Exfoliación profunda que elimina células muertas y vello facial.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
         </div>
-        <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">
-          Ver guía completa de limpiezas →
-        </a>
+        <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">Ver guía completa de limpiezas →</a>
       </div>
     </div>
 
-    <!-- Categoría 2 -->
     <div class="trat-acord fade-in">
       <button class="acord-btn" onclick="toggleAcord(this)">
         <div class="acord-left">
@@ -154,38 +126,15 @@
       </button>
       <div class="acord-body">
         <div class="trat-grid">
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Hidralips</h4>
-            <p>Hidratación profunda para labios más suaves, voluminosos y saludables.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Laminado de cejas</h4>
-            <p>Define y fija las cejas logrando un efecto más prolijo y natural.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Perfilado de cejas</h4>
-            <p>Diseño de cejas personalizado según tu rostro.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Lifting de pestañas</h4>
-            <p>Realza tus pestañas naturales con efecto lifting y curvatura.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
+          <div class="trat-card"><h4>Hidralips</h4><p>Hidratación profunda para labios más suaves, voluminosos y saludables.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Laminado de cejas</h4><p>Define y fija las cejas logrando un efecto más prolijo y natural.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Perfilado de cejas</h4><p>Diseño de cejas personalizado según tu rostro.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Lifting de pestañas</h4><p>Realza tus pestañas naturales con efecto lifting y curvatura.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
         </div>
-        <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">
-          Ver guía completa de ojos y labios →
-        </a>
+        <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">Ver guía completa de ojos y labios →</a>
       </div>
     </div>
 
-    <!-- Categoría 3 -->
     <div class="trat-acord fade-in">
       <button class="acord-btn" onclick="toggleAcord(this)">
         <div class="acord-left">
@@ -196,47 +145,20 @@
       </button>
       <div class="acord-body">
         <div class="trat-grid">
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Rosácea</h4>
-            <p>Calma, desinflama y mejora el aspecto de pieles sensibles.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Antiage</h4>
-            <p>Reduce líneas de expresión y mejora la firmeza de la piel.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Acné</h4>
-            <p>Controla brotes, limpia la piel y previene nuevas imperfecciones.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Hilos cosmetológicos</h4>
-            <p>Efecto lifting sin cirugía para mejorar firmeza y tonicidad.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
-          <div class="trat-card">
-            <div class="trat-icon"></div>
-            <h4>Exosomas</h4>
-            <p>Regeneración celular avanzada para una piel más joven y saludable.</p>
-            <a href="#turnos" class="trat-link">Reservar →</a>
-          </div>
+          <div class="trat-card"><h4>Rosácea</h4><p>Calma, desinflama y mejora el aspecto de pieles sensibles.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Antiage</h4><p>Reduce líneas de expresión y mejora la firmeza de la piel.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Acné</h4><p>Controla brotes, limpia la piel y previene nuevas imperfecciones.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Hilos cosmetológicos</h4><p>Efecto lifting sin cirugía para mejorar firmeza y tonicidad.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Exosomas</h4><p>Regeneración celular avanzada para una piel más joven y saludable.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
         </div>
-        <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">
-          Ver guía completa de tratamientos especializados →
-        </a>
+        <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">Ver guía completa →</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- ANTES Y DESPUÉS — carrusel -->
+<!-- ANTES Y DESPUÉS -->
 <section id="antes-despues" class="antes-despues">
   <div class="ad-inner">
     <div class="section-head fade-in">
@@ -244,63 +166,35 @@
       <h2 class="white">Antes y después</h2>
       <p class="sub-light">Deslizá para ver más resultados</p>
     </div>
-
     <div class="carrusel-wrap fade-in">
       <button class="carr-btn carr-prev" onclick="moverCarr(-1)" aria-label="Anterior">‹</button>
-
       <div class="carrusel-viewport" id="carrViewport">
         <div class="carrusel-track" id="carrTrack">
-
           <div class="carr-slide">
             <div class="carr-imgs">
-              <div class="carr-img-wrap">
-                <img src="limp1.png" alt="Antes">
-                <span class="carr-label">ANTES</span>
-              </div>
-              <div class="carr-img-wrap">
-                <img src="limp2.png" alt="Después">
-                <span class="carr-label after">DESPUÉS</span>
-              </div>
+              <div class="carr-img-wrap"><img src="limp1.png" alt="Antes"><span class="carr-label">ANTES</span></div>
+              <div class="carr-img-wrap"><img src="limp2.png" alt="Después"><span class="carr-label after">DESPUÉS</span></div>
             </div>
             <p>Limpieza profunda con extracciones</p>
           </div>
-
           <div class="carr-slide">
             <div class="carr-imgs">
-              <div class="carr-img-wrap">
-                <img src="age1.png" alt="Antes">
-                <span class="carr-label">ANTES</span>
-              </div>
-              <div class="carr-img-wrap">
-                <img src="age2.png" alt="Después">
-                <span class="carr-label after">DESPUÉS</span>
-              </div>
+              <div class="carr-img-wrap"><img src="age1.png" alt="Antes"><span class="carr-label">ANTES</span></div>
+              <div class="carr-img-wrap"><img src="age2.png" alt="Después"><span class="carr-label after">DESPUÉS</span></div>
             </div>
             <p>Tratamiento antiage</p>
           </div>
-
           <div class="carr-slide">
             <div class="carr-imgs">
-              <div class="carr-img-wrap">
-                <img src="lif1.png" alt="Antes">
-                <span class="carr-label">ANTES</span>
-              </div>
-              <div class="carr-img-wrap">
-                <img src="lif2.png" alt="Después">
-                <span class="carr-label after">DESPUÉS</span>
-              </div>
+              <div class="carr-img-wrap"><img src="lif1.png" alt="Antes"><span class="carr-label">ANTES</span></div>
+              <div class="carr-img-wrap"><img src="lif2.png" alt="Después"><span class="carr-label after">DESPUÉS</span></div>
             </div>
             <p>Lifting de pestañas y Laminado</p>
           </div>
-
-
-
         </div>
       </div>
-
       <button class="carr-btn carr-next" onclick="moverCarr(1)" aria-label="Siguiente">›</button>
     </div>
-
     <div class="carr-dots" id="carrDots"></div>
   </div>
 </section>
@@ -313,13 +207,9 @@
       <h2>Productos para el hogar</h2>
       <p class="section-sub">Los mismos productos que usamos en el consultorio, para que sigas cuidando tu piel en casa</p>
     </div>
-
     <div class="prod-grid fade-in">
-
       <div class="prod-card">
-        <div class="prod-img-wrap">
-          <img src="serum.jpeg" alt="Producto 1">
-        </div>
+        <div class="prod-img-wrap"><img src="serum.jpeg" alt="Sérum vitamina C"></div>
         <div class="prod-info">
           <span class="prod-cat">Hidratación</span>
           <h4>Sérum vitamina C</h4>
@@ -327,11 +217,8 @@
           <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20S%C3%A9rum%20vitamina%20C" target="_blank" class="prod-btn">Consultar →</a>
         </div>
       </div>
-
       <div class="prod-card">
-        <div class="prod-img-wrap">
-          <img src="gel.jpeg" alt="Producto 2">
-        </div>
+        <div class="prod-img-wrap"><img src="gel.jpeg" alt="Gel limpiador"></div>
         <div class="prod-info">
           <span class="prod-cat">Limpieza</span>
           <h4>Gel limpiador facial</h4>
@@ -339,23 +226,17 @@
           <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Gel%20limpiador" target="_blank" class="prod-btn">Consultar →</a>
         </div>
       </div>
-
       <div class="prod-card">
-        <div class="prod-img-wrap">
-          <img src="exfoliante.jpeg" alt="Producto 3">
-        </div>
+        <div class="prod-img-wrap"><img src="exfoliante.jpeg" alt="Exfoliante"></div>
         <div class="prod-info">
           <span class="prod-cat">Exfoliante</span>
           <h4>Exfoliante Purificador</h4>
-          <p>Prepara la piel para una optima absorcion de activos.</p>
-          <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Protector%20solar" target="_blank" class="prod-btn">Consultar →</a>
+          <p>Prepara la piel para una óptima absorción de activos.</p>
+          <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Exfoliante" target="_blank" class="prod-btn">Consultar →</a>
         </div>
       </div>
-
       <div class="prod-card">
-        <div class="prod-img-wrap">
-          <img src="crema.jpeg" alt="Producto 4">
-        </div>
+        <div class="prod-img-wrap"><img src="crema.jpeg" alt="Crema antiage"></div>
         <div class="prod-info">
           <span class="prod-cat">Tratamiento</span>
           <h4>Crema antiage noche</h4>
@@ -363,14 +244,89 @@
           <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20la%20Crema%20antiage" target="_blank" class="prod-btn">Consultar →</a>
         </div>
       </div>
+    </div>
+    <div class="prod-catalogo fade-in">
+      <p>¿Querés ver todos los productos disponibles?</p>
+      <a href="https://www.canva.com/design/DAHAR2lPU-M/lxtMqz29o7PM30GYPho3Xw/view?utm_content=DAHAR2lPU-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0c029cbbd5" target="_blank" class="btn-catalogo">Ver catálogo completo →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOS Y GIFT CARDS -->
+<section id="promos" class="promos">
+  <div class="promos-inner">
+    <div class="section-head fade-in">
+      <span class="tag light">✦ Ofertas especiales</span>
+      <h2 class="white">Promos y Gift Cards</h2>
+      <p class="sub-light">Mimarte nunca fue tan accesible — o regalá una experiencia única</p>
+    </div>
+
+    <div class="promos-grid fade-in">
+
+      <!-- PROMO 1 -->
+      <div class="promo-card">
+        <div class="promo-tag-top">PROMO</div>
+        <div class="promo-icon">🌿</div>
+        <h3>Pack Iniciación</h3>
+        <p class="promo-desc">Limpieza profunda + perfilado de cejas. El combo ideal para empezar a cuidar tu piel.</p>
+        <div class="promo-precio">
+          <span class="precio-tachado">$XX.000</span>
+          <span class="precio-final">$XX.000</span>
+        </div>
+        <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Iniciaci%C3%B3n" target="_blank" class="btn-promo">Quiero esta promo →</a>
+      </div>
+
+      <!-- PROMO 2 -->
+      <div class="promo-card featured-promo">
+        <div class="promo-tag-top destacado">MÁS POPULAR</div>
+        <div class="promo-icon">✨</div>
+        <h3>Pack Glow</h3>
+        <p class="promo-desc">Limpieza con dermaplaning + laminado de cejas + hidralips. Salís radiante.</p>
+        <div class="promo-precio">
+          <span class="precio-tachado">$XX.000</span>
+          <span class="precio-final">$XX.000</span>
+        </div>
+        <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Glow" target="_blank" class="btn-promo">Quiero esta promo →</a>
+      </div>
+
+      <!-- PROMO 3 -->
+      <div class="promo-card">
+        <div class="promo-tag-top">PROMO</div>
+        <div class="promo-icon">⏳</div>
+        <h3>Pack Antiage Express</h3>
+        <p class="promo-desc">Tratamiento antiage + lifting de pestañas. Rejuvenecé sin cirugía.</p>
+        <div class="promo-precio">
+          <span class="precio-tachado">$XX.000</span>
+          <span class="precio-final">$XX.000</span>
+        </div>
+        <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Antiage" target="_blank" class="btn-promo">Quiero esta promo →</a>
+      </div>
 
     </div>
 
-    <div class="prod-catalogo fade-in">
-      <p>¿Querés ver todos los productos disponibles?</p>
-      <a href="https://www.canva.com/design/DAHAR2lPU-M/lxtMqz29o7PM30GYPho3Xw/view?utm_content=DAHAR2lPU-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0c029cbbd5" target="_blank" class="btn-catalogo">
-        Ver catálogo completo →
-      </a>
+    <!-- GIFT CARDS -->
+    <div class="giftcard-wrap fade-in">
+      <div class="giftcard-texto">
+        <span class="tag">✦ Gift Card</span>
+        <h3>Regalá una experiencia</h3>
+        <p>Las Gift Cards de Margot son el regalo perfecto para quien querés que se mime. Disponibles en distintos montos, válidas para cualquier tratamiento.</p>
+        <ul class="giftcard-lista">
+          <li>✓ Válida para todos los tratamientos</li>
+          <li>✓ Sin fecha de vencimiento</li>
+          <li>✓ Se entrega por WhatsApp o en consultorio</li>
+          <li>✓ Combinable con promos vigentes</li>
+        </ul>
+        <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20regalar%20una%20Gift%20Card%20de%20Margot" target="_blank" class="btn-primary">Comprar Gift Card →</a>
+      </div>
+      <div class="giftcard-visual">
+        <div class="giftcard-mockup">
+          <div class="gc-deco">✦</div>
+          <span class="gc-brand">MARGOT</span>
+          <span class="gc-sub">SKIN BEAUTY</span>
+          <div class="gc-msg">Una experiencia<br><em>para vos</em></div>
+          <div class="gc-bottom">Gift Card · Consultorio · Mendoza</div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -385,67 +341,30 @@
       <p class="sub-light">Todo lo que necesitás saber antes de tu primera sesión</p>
     </div>
     <div class="faq-list fade-in">
-
       <div class="faq-item">
-        <button class="faq-btn" onclick="toggleFaq(this)">
-          ¿Cómo sé qué tratamiento es el indicado para mí?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-resp">
-          <p>En la primera consulta hacemos una evaluación de tu piel y te recomiendo el tratamiento más adecuado según tu tipo de piel, preocupaciones y objetivos. No es necesario que llegués sabiendo qué querés.</p>
-        </div>
+        <button class="faq-btn" onclick="toggleFaq(this)">¿Cómo sé qué tratamiento es el indicado para mí?<span class="faq-icon">+</span></button>
+        <div class="faq-resp"><p>En la primera consulta hacemos una evaluación de tu piel y te recomiendo el tratamiento más adecuado según tu tipo de piel, preocupaciones y objetivos.</p></div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-btn" onclick="toggleFaq(this)">
-          ¿Con qué frecuencia debo realizarme los tratamientos?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-resp">
-          <p>Depende del tratamiento. Las limpiezas faciales se recomiendan cada 4-6 semanas. Los tratamientos específicos como antiage o acné pueden requerir sesiones semanales o quincenales al inicio.</p>
-        </div>
+        <button class="faq-btn" onclick="toggleFaq(this)">¿Con qué frecuencia debo realizarme los tratamientos?<span class="faq-icon">+</span></button>
+        <div class="faq-resp"><p>Depende del tratamiento. Las limpiezas faciales se recomiendan cada 4-6 semanas. Los tratamientos específicos como antiage o acné pueden requerir sesiones semanales o quincenales al inicio.</p></div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-btn" onclick="toggleFaq(this)">
-          ¿Los tratamientos duelen?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-resp">
-          <p>La mayoría son muy cómodos y relajantes. Algunos como el microneedling o las extracciones pueden generar leve incomodidad, pero son perfectamente tolerables.</p>
-        </div>
+        <button class="faq-btn" onclick="toggleFaq(this)">¿Los tratamientos duelen?<span class="faq-icon">+</span></button>
+        <div class="faq-resp"><p>La mayoría son muy cómodos y relajantes. Algunos como el microneedling o las extracciones pueden generar leve incomodidad, pero son perfectamente tolerables.</p></div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-btn" onclick="toggleFaq(this)">
-          ¿Qué debo hacer antes de venir a una sesión?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-resp">
-          <p>Venir sin maquillaje. Evitar exposición solar intensa las 48hs previas. No usar ácidos ni retinol los 3 días anteriores. Venir con la piel limpia o limpiarla al llegar.</p>
-        </div>
+        <button class="faq-btn" onclick="toggleFaq(this)">¿Qué debo hacer antes de venir a una sesión?<span class="faq-icon">+</span></button>
+        <div class="faq-resp"><p>Venir sin maquillaje. Evitar exposición solar intensa las 48hs previas. No usar ácidos ni retinol los 3 días anteriores. Venir con la piel limpia o limpiarla al llegar.</p></div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-btn" onclick="toggleFaq(this)">
-          ¿Cuánto dura cada sesión?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-resp">
-          <p>Una limpieza simple dura aproximadamente 45-60 minutos. Los tratamientos más complejos como microneedling o exosomas pueden durar entre 60 y 90 minutos.</p>
-        </div>
+        <button class="faq-btn" onclick="toggleFaq(this)">¿Cuánto dura cada sesión?<span class="faq-icon">+</span></button>
+        <div class="faq-resp"><p>Una limpieza simple dura aproximadamente 45-60 minutos. Los tratamientos más complejos pueden durar entre 60 y 90 minutos.</p></div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-btn" onclick="toggleFaq(this)">
-          ¿Puedo cancelar o reprogramar mi turno?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-resp">
-          <p>Sí, con al menos 24 horas de anticipación a través del link que te llega por email al reservar, o contactándome directamente por WhatsApp.</p>
-        </div>
+        <button class="faq-btn" onclick="toggleFaq(this)">¿Puedo cancelar o reprogramar mi turno?<span class="faq-icon">+</span></button>
+        <div class="faq-resp"><p>Sí, con al menos 24 horas de anticipación a través del link que te llega por email al reservar, o contactándome directamente por WhatsApp.</p></div>
       </div>
-
     </div>
   </div>
 </section>
@@ -459,115 +378,46 @@
       <p class="sub-light">Elegí el día y horario que mejor te quede</p>
     </div>
     <div class="calendly-wrap fade-in">
-      <div class="calendly-inline-widget"
-        data-url="https://calendly.com/solmelocchi582/30min"
-        style="min-width:320px;height:700px;">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/solmelocchi582/30min" style="min-width:320px;height:700px;"></div>
+    </div>
+    <div class="consulta-extra fade-in">
+      <div class="consulta-head">
+        <h3>¿Ya reservaste tu turno?</h3>
+        <p>Completá estos datos para que pueda enviarte las indicaciones previas por WhatsApp.</p>
       </div>
+      <form id="beauty-form" action="https://formspree.io/f/xgvnkrrb" method="POST" class="beauty-form">
+        <div class="form-group">
+          <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+          <input type="email" name="email" placeholder="Tu email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="telefono" placeholder="WhatsApp (Ej: 2615860906)" required>
+          <select name="servicio" required>
+            <option value="" disabled selected>Elegí tu tratamiento</option>
+            <optgroup label="Limpiezas">
+              <option value="Limpieza simple">Limpieza simple</option>
+              <option value="Limpieza profunda">Limpieza profunda</option>
+              <option value="Dermaplaning">Dermaplaning</option>
+            </optgroup>
+            <optgroup label="Ojos y Labios">
+              <option value="Hidralips">Hidralips</option>
+              <option value="Lifting o Laminado">Lifting o Laminado</option>
+            </optgroup>
+            <optgroup label="Especializados">
+              <option value="Acné o Rosácea">Acné o Rosácea</option>
+              <option value="Antiage">Antiage</option>
+              <option value="Exosomas / Microneedling">Exosomas / Microneedling</option>
+            </optgroup>
+          </select>
+        </div>
+        <textarea name="mensaje" placeholder="Contame sobre tu tipo de piel o si tenés alguna alergia..." rows="3"></textarea>
+        <button type="submit" id="submit-btn" class="btn-primary">Enviar datos y pagar seña →</button>
+        <p id="form-status" style="margin-top:14px;font-size:0.88rem;text-align:center;display:none;"></p>
+      </form>
     </div>
-
-    <!-- Formulario complementario -->
-   <div class="consulta-extra fade-in">
-  <div class="consulta-head">
-    <h3>¿Ya reservaste tu turno?</h3>
-    <p>Completá estos datos para que pueda enviarte las indicaciones previas por WhatsApp.</p>
   </div>
-  
-  <form id="beauty-form" action="https://formspree.io/f/xgvnkrrb" method="POST" class="beauty-form">
-    <div class="form-group">
-      <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-    </div>
-    <div class="form-group">
-      <input type="tel" name="telefono" placeholder="WhatsApp (Ej: 2615860906)" required>
-      <select name="servicio" required>
-        <option value="" disabled selected>Elegí tu tratamiento</option>
-        <optgroup label="Limpiezas">
-          <option value="Limpieza simple">Limpieza simple</option>
-          <option value="Limpieza profunda">Limpieza profunda</option>
-          <option value="Dermaplaning">Dermaplaning</option>
-        </optgroup>
-        <optgroup label="Ojos y Labios">
-          <option value="Hidralips">Hidralips</option>
-          <option value="Lifting o Laminado">Lifting o Laminado</option>
-        </optgroup>
-        <optgroup label="Especializados">
-          <option value="Acné o Rosácea">Acné o Rosácea</option>
-          <option value="Antiage">Antiage</option>
-          <option value="Exosomas / Microneedling">Exosomas / Microneedling</option>
-        </optgroup>
-      </select>
-    </div>
-    <textarea name="mensaje" placeholder="Contame sobre tu tipo de piel o si tenés alguna alergia..." rows="3"></textarea>
-    
-    <button type="submit" id="submit-btn" class="btn-primary">Enviar datos y pagar seña →</button>
-    
-    <p id="form-status" style="margin-top: 15px; font-size: 0.9rem; text-align: center; display: none;"></p>
-  </form>
-</div>
 </section>
 <script src="https://assets.calendly.com/assets/external/widget.js"></script>
-<script>
-  const formBeauty = document.getElementById("beauty-form");
-
-  if (formBeauty) {
-    formBeauty.addEventListener("submit", async function(event) {
-      event.preventDefault(); // Detenemos el envío tradicional para controlar la redirección
-      
-      const statusText = document.getElementById("form-status");
-      const submitBtn = document.getElementById("submit-btn");
-      
-      // 1. Capturamos los datos del formulario
-      const formData = new FormData(event.target);
-      
-      // 2. Convertimos los datos a un objeto JSON puro (lo que pide Formspree)
-      const data = {};
-      formData.forEach((value, key) => {
-        data[key] = value;
-      });
-
-      // Feedback visual para la clienta
-      submitBtn.disabled = true;
-      submitBtn.innerText = "Enviando datos...";
-
-      // 3. Enviamos la petición vía Fetch
-      fetch(event.target.action, {
-        method: 'POST',
-        body: JSON.stringify(data), // Enviamos el objeto convertido a texto JSON
-        headers: { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json' 
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          // ÉXITO: Mostramos confirmación y redirigimos
-          statusText.style.display = "block";
-          statusText.style.color = "#3d2c2e";
-          statusText.innerHTML = "<strong>¡Datos recibidos!</strong><br>Redirigiendo a Mercado Pago para completar la seña...";
-          
-          setTimeout(() => {
-            // TU LINK DE MERCADO PAGO
-            window.location.href = "https://mpago.la/2dMsftu"; 
-          }, 2000);
-
-        } else {
-          // Si el servidor responde pero con error
-          throw new Error('Error en el servidor');
-        }
-      })
-      .catch(error => {
-        // MANEJO DE ERRORES (Conexión o servidor)
-        statusText.style.display = "block";
-        statusText.style.color = "red";
-        statusText.innerText = "No se pudo enviar. Por favor, revisá tu conexión e intentá de nuevo.";
-        
-        // Rehabilitamos el botón para que pueda reintentar
-        submitBtn.disabled = false;
-        submitBtn.innerText = "Enviar datos y pagar seña →";
-      });
-    });
-  }
-</script>
 
 <!-- CONTACTO -->
 <section id="contacto" class="contacto">
@@ -583,9 +433,7 @@
       <p class="contacto-horario">🕐 Atención: Lunes a Viernes · 9:00 a 18:00hs</p>
     </div>
     <div class="contacto-deco fade-in-right">
-      <div class="deco-circle">
-        <span class="deco-letter">M</span>
-      </div>
+      <div class="deco-circle"><span class="deco-letter">M</span></div>
       <div class="deco-tags">
         <span>Piel saludable</span>
         <span>Resultados reales</span>
@@ -600,9 +448,8 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-logo">MARGOT <small>SKIN BEAUTY</small></div>
-
+    <div class="footer-links">
     </div>
-
     <p class="footer-copy">© 2026 Margot Skin Beauty · Todos los derechos reservados</p>
   </div>
 </footer>
@@ -644,9 +491,7 @@ function closeNav() {
 function toggleFaq(btn) {
   const resp = btn.nextElementSibling;
   const open = btn.classList.contains('open');
-  document.querySelectorAll('.faq-btn.open').forEach(b => {
-    b.classList.remove('open'); b.nextElementSibling.classList.remove('open');
-  });
+  document.querySelectorAll('.faq-btn.open').forEach(b => { b.classList.remove('open'); b.nextElementSibling.classList.remove('open'); });
   if (!open) { btn.classList.add('open'); resp.classList.add('open'); }
 }
 
@@ -654,18 +499,15 @@ function toggleFaq(btn) {
 function toggleAcord(btn) {
   const body = btn.nextElementSibling;
   const open = btn.classList.contains('open');
-  document.querySelectorAll('.acord-btn.open').forEach(b => {
-    b.classList.remove('open'); b.nextElementSibling.classList.remove('open');
-  });
+  document.querySelectorAll('.acord-btn.open').forEach(b => { b.classList.remove('open'); b.nextElementSibling.classList.remove('open'); });
   if (!open) { btn.classList.add('open'); body.classList.add('open'); }
 }
 
-// CARRUSEL ANTES/DESPUÉS
+// CARRUSEL
 let carrIdx = 0;
 const track = document.getElementById('carrTrack');
 const slides = track ? track.querySelectorAll('.carr-slide') : [];
 const dotsContainer = document.getElementById('carrDots');
-
 function initCarr() {
   if (!slides.length) return;
   slides.forEach((_, i) => {
@@ -676,42 +518,56 @@ function initCarr() {
   });
   updateCarr();
 }
-
+function goCarr(n) { carrIdx = n; updateCarr(); }
 function updateCarr() {
   const slideW = track.parentElement.offsetWidth;
   track.style.transform = `translateX(-${carrIdx * slideW}px)`;
   document.querySelectorAll('.carr-dot').forEach((d, i) => d.classList.toggle('active', i === carrIdx));
 }
-
-function moverCarr(dir) {
-  carrIdx = (carrIdx + dir + slides.length) % slides.length;
-  updateCarr();
-}
-
+function moverCarr(dir) { carrIdx = (carrIdx + dir + slides.length) % slides.length; updateCarr(); }
 window.addEventListener('resize', updateCarr);
-
-// Touch swipe
 let touchStart = 0;
 if (track) {
   track.addEventListener('touchstart', e => touchStart = e.touches[0].clientX, { passive: true });
-  track.addEventListener('touchend', e => {
-    const diff = touchStart - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) moverCarr(diff > 0 ? 1 : -1);
+  track.addEventListener('touchend', e => { const diff = touchStart - e.changedTouches[0].clientX; if (Math.abs(diff) > 40) moverCarr(diff > 0 ? 1 : -1); });
+}
+setInterval(() => moverCarr(1), 5000);
+
+// FORMULARIO + MERCADO PAGO
+const formBeauty = document.getElementById('beauty-form');
+if (formBeauty) {
+  formBeauty.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const statusText = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
+    const formData = new FormData(e.target);
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Enviando datos...';
+    fetch(e.target.action, {
+      method: 'POST', body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        statusText.style.display = 'block';
+        statusText.style.color = '#3d2c2e';
+        statusText.innerHTML = '<strong>¡Datos recibidos!</strong><br>Redirigiendo a Mercado Pago para abonar la seña...';
+        setTimeout(() => { window.location.href = 'https://mpago.la/2dMsftu'; }, 2500);
+      } else { throw new Error(); }
+    }).catch(() => {
+      statusText.style.display = 'block';
+      statusText.style.color = 'red';
+      statusText.innerText = 'Error de conexión. Intentá de nuevo.';
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Enviar datos y pagar seña →';
+    });
   });
 }
 
-// Auto-avance cada 5s
-setInterval(() => moverCarr(1), 5000);
-
 // SCROLL ANIMATIONS
 const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
-  });
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => obs.observe(el));
-
-// Init
 initCarr();
 </script>
 </body>
