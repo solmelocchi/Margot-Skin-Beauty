@@ -262,12 +262,14 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .faq-resp.open { max-height: 200px; padding: 0 24px 20px; }
 .faq-resp p { color: rgba(255,220,225,0.75); font-size: 0.85rem; line-height: 1.7; }
 
-/* ══ SECCIÓN TURNOS (Estilo Margot Rosa Bebé) ══ */
+
+/* ══ SECCIÓN TURNOS (Estilo Margot: Rosa & Títulos Marrones) ══ */
 .turnos { 
-  /* AQUÍ ESTÁ EL CAMBIO: Se abre la llave y se ponen los colores rosa de la foto */
+  /* Fondo Rosa Bebé suave */
   background: linear-gradient(rgba(244, 194, 194, 0.94), rgba(244, 194, 194, 0.96)), 
               url('fondobeauti.jpg') center/cover no-repeat !important; 
   padding: 100px 48px; 
+  text-align: center; /* Centra todo el contenido */
 }
 
 .turnos-inner { 
@@ -275,84 +277,64 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
   margin: auto; 
 }
 
+/* 1. EL TAG (Agenda Online) */
+.turnos .tag.light { 
+  background: rgba(107, 76, 80, 0.1); /* Fondo marroncito muy suave */
+  color: #6b4c50; /* El marrón de la foto */
+  border: 1px solid rgba(107, 76, 80, 0.2);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* 2. EL TÍTULO (Reservá tu turno) */
+.turnos h2.white { 
+  font-family: 'Cormorant Garamond', serif; 
+  font-size: clamp(2.5rem, 5vw, 4rem); 
+  color: #6b4c50 !important; /* Forzamos el marrón oscuro de la foto */
+  font-weight: 300; 
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+/* 3. EL SUBTÍTULO (Elegí el día y horario...) */
+.turnos .sub-light { 
+  color: #8a7a7b !important; /* Un gris-marrón suave para que se lea perfecto */
+  font-size: 1.1rem; 
+  font-weight: 300;
+  margin-top: 10px; 
+  opacity: 0.9;
+}
+
+/* ══ AJUSTE DE LAS CARDS (Calendly y Formulario) ══ */
 .calendly-wrap { 
   background: white; 
-  border-radius: 20px; 
+  border-radius: 24px; 
   overflow: hidden; 
   box-shadow: 0 15px 45px rgba(107, 76, 80, 0.1); 
-  margin-top: 40px; 
+  margin-top: 50px; 
+  border: 1px solid white;
 }
 
 .consulta-extra { 
   max-width: 700px; 
-  margin: 50px auto 0; 
+  margin: 60px auto 0; 
   background: white; 
-  padding: 40px; 
-  border-radius: 20px; 
+  padding: 50px; 
+  border-radius: 24px; 
   box-shadow: 0 15px 45px rgba(107, 76, 80, 0.1); 
 }
 
-.consulta-head { text-align: center; margin-bottom: 28px; }
-
+/* Títulos dentro de la card blanca */
 .consulta-head h3 { 
   font-family: 'Cormorant Garamond', serif; 
-  font-size: 2.2rem; 
-  color: #6b4c50; /* Un marrón suave que resalta sobre el rosa */
-  margin-bottom: 8px; 
+  font-size: 2rem; 
+  color: #6b4c50; 
   font-weight: 300; 
-}
-
-.consulta-head p { 
-  font-size: 0.9rem; 
-  color: #8a7a7b; 
-}
-
-.beauty-form { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 14px; 
-}
-
-.form-group { 
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  gap: 14px; 
-}
-
-.beauty-form input, 
-.beauty-form select, 
-.beauty-form textarea { 
-  width: 100%; 
-  padding: 14px 18px; 
-  border: 1px solid #e8d5cc; 
-  border-radius: 12px; 
-  font-family: 'Jost', sans-serif; 
-  font-size: 0.9rem; 
-  background: #faf7f4; 
-  color: #4a3a3b; 
-  outline: none; 
-  transition: all 0.3s; 
-}
-
-.beauty-form input:focus { 
-  border-color: #d4b5a8; 
-  background: white;
-}
-
-/* El botón de enviar para que combine */
-.beauty-form button { 
-  background: #6b4c50; 
-  color: white; 
-  border: none; 
-  padding: 15px; 
-  border-radius: 30px; 
-  cursor: pointer; 
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.beauty-form button:hover { 
-  background: #d4b5a8; 
 }
 
 /* ══ CONTACTO ══ */
