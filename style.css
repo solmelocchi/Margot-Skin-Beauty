@@ -262,22 +262,98 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .faq-resp.open { max-height: 200px; padding: 0 24px 20px; }
 .faq-resp p { color: rgba(255,220,225,0.75); font-size: 0.85rem; line-height: 1.7; }
 
-/* ══ TURNOS ══ */
-background: linear-gradient(rgba(244, 194, 194, 0.94), rgba(244, 194, 194, 0.96)), 
-              url('fondobeauti.jpg') center/cover no-repeat; 
+/* ══ SECCIÓN TURNOS (Estilo Margot Rosa Bebé) ══ */
+.turnos { 
+  /* AQUÍ ESTÁ EL CAMBIO: Se abre la llave y se ponen los colores rosa de la foto */
+  background: linear-gradient(rgba(244, 194, 194, 0.94), rgba(244, 194, 194, 0.96)), 
+              url('fondobeauti.jpg') center/cover no-repeat !important; 
   padding: 100px 48px; 
 }
-.turnos-inner { max-width: 900px; margin: auto; }
-.calendly-wrap { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin-top: 40px; }
-.consulta-extra { max-width: 700px; margin: 50px auto 0; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.2); }
+
+.turnos-inner { 
+  max-width: 900px; 
+  margin: auto; 
+}
+
+.calendly-wrap { 
+  background: white; 
+  border-radius: 20px; 
+  overflow: hidden; 
+  box-shadow: 0 15px 45px rgba(107, 76, 80, 0.1); 
+  margin-top: 40px; 
+}
+
+.consulta-extra { 
+  max-width: 700px; 
+  margin: 50px auto 0; 
+  background: white; 
+  padding: 40px; 
+  border-radius: 20px; 
+  box-shadow: 0 15px 45px rgba(107, 76, 80, 0.1); 
+}
+
 .consulta-head { text-align: center; margin-bottom: 28px; }
-.consulta-head h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--texto-sua); margin-bottom: 8px; font-weight: 300; }
-.consulta-head p { font-size: 0.88rem; color: var(--texto-sua); }
-.beauty-form { display: flex; flex-direction: column; gap: 14px; }
-.form-group { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.beauty-form input, .beauty-form select, .beauty-form textarea { width: 100%; padding: 12px 18px; border: 1px solid var(--rosa3); border-radius: 12px; font-family: 'Jost', sans-serif; font-size: 0.88rem; background: var(--crema2); color: var(--texto); outline: none; transition: border-color 0.3s; }
-.beauty-form input:focus, .beauty-form select:focus, .beauty-form textarea:focus { border-color: var(--rosa2); }
-.beauty-form button { cursor: pointer; width: 100%; margin-top: 6px; }
+
+.consulta-head h3 { 
+  font-family: 'Cormorant Garamond', serif; 
+  font-size: 2.2rem; 
+  color: #6b4c50; /* Un marrón suave que resalta sobre el rosa */
+  margin-bottom: 8px; 
+  font-weight: 300; 
+}
+
+.consulta-head p { 
+  font-size: 0.9rem; 
+  color: #8a7a7b; 
+}
+
+.beauty-form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 14px; 
+}
+
+.form-group { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 14px; 
+}
+
+.beauty-form input, 
+.beauty-form select, 
+.beauty-form textarea { 
+  width: 100%; 
+  padding: 14px 18px; 
+  border: 1px solid #e8d5cc; 
+  border-radius: 12px; 
+  font-family: 'Jost', sans-serif; 
+  font-size: 0.9rem; 
+  background: #faf7f4; 
+  color: #4a3a3b; 
+  outline: none; 
+  transition: all 0.3s; 
+}
+
+.beauty-form input:focus { 
+  border-color: #d4b5a8; 
+  background: white;
+}
+
+/* El botón de enviar para que combine */
+.beauty-form button { 
+  background: #6b4c50; 
+  color: white; 
+  border: none; 
+  padding: 15px; 
+  border-radius: 30px; 
+  cursor: pointer; 
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.beauty-form button:hover { 
+  background: #d4b5a8; 
+}
 
 /* ══ CONTACTO ══ */
 .contacto { padding: 120px 48px; background: url('contacto.png') center/cover no-repeat; position: relative; }
