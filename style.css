@@ -189,7 +189,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .beauty-form button { cursor: pointer; width: 100%; margin-top: 6px; }
 
 /* ══ CONTACTO ══ */
-.contacto { padding: 120px 48px; background: url('contacto (2).png') center/cover no-repeat; position: relative; }
+.contacto { padding: 120px 48px; background: url('contacto.png') center/cover no-repeat; position: relative; }
 .contacto::before { content: ''; position: absolute; inset: 0; background: rgba(250,247,244,0.92); }
 .contacto-inner { max-width: 1000px; margin: auto; display: flex; gap: 80px; align-items: center; flex-wrap: wrap; position: relative; z-index: 2; }
 .contacto-texto { flex: 1; min-width: 280px; }
