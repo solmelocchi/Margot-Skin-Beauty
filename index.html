@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Margot Skin Beauty | Cosmetología Profesional</title>
-<meta name="description" content="Tratamientos faciales personalizados. Reservá tu turno online. Cosmetología profesional en Mendoza.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margot Skin Beauty | Cosmetología Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
-  <a href="#inicio"        onclick="closeNav()">Inicio</a>
-  <a href="#tratamientos"  onclick="closeNav()">Tratamientos</a>
-  <a href="#antes-despues" onclick="closeNav()">Resultados</a>
-  <a href="#productos"     onclick="closeNav()">Productos</a>
-  <a href="#promos"        onclick="closeNav()">Promos</a>
-  <a href="#faq"           onclick="closeNav()">Preguntas</a>
-  <a href="#turnos"        onclick="closeNav()">Turnos</a>
-  <a href="#contacto"      onclick="closeNav()">Contacto</a>
+    <a href="#inicio" onclick="closeNav()">Inicio</a>
+    <a href="#tratamientos" onclick="closeNav()">Tratamientos</a>
+    <a href="#antes-despues" onclick="closeNav()">Resultados</a>
+    <a href="#productos" onclick="closeNav()">Productos</a>
+    <a href="#promos" onclick="closeNav()">Promos</a>
+    <a href="#testimonios" onclick="closeNav()">Opiniones</a>
+    <a href="#turnos" onclick="closeNav()">Turnos</a>
+    <a href="#contacto" onclick="closeNav()">Contacto</a>
 </div>
 
-<!-- HEADER -->
 <header class="header" id="header">
-  <div class="header-inner">
-    <div class="logo-wrap">
-      <div class="logo-text">
-        <span class="logo-name">MARGOT</span>
-        <span class="logo-sub">SKIN BEAUTY</span>
-      </div>
+    <div class="header-inner">
+        <div class="logo-text">
+            <span class="logo-name">MARGOT</span>
+            <span class="logo-sub">SKIN BEAUTY</span>
+        </div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#tratamientos">Tratamientos</a>
+            <a href="#productos">Productos</a>
+            <a href="#promos">Promos</a>
+            <a href="#testimonios">Opiniones</a>
+            <a href="#turnos" class="nav-cta">Reservar turno</a>
+        </nav>
+        <button class="hamburger" id="hamburger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-    <nav class="nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#tratamientos">Tratamientos</a>
-      <a href="#antes-despues">Resultados</a>
-      <a href="#productos">Productos</a>
-      <a href="#promos">Promos</a>
-      <a href="#faq">FAQ</a>
-       <a href="#turnos">Reservar turno</a>
-    </nav>
-    <button class="hamburger" id="hamburger" onclick="toggleNav()">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
 </header>
 
-<!-- HERO -->
 <section id="inicio" class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content fade-in">
-    <span class="hero-tag">✦ Cosmetología profesional · Mendoza</span>
-    <h1>Tu piel merece<br><em>el mejor cuidado</em></h1>
-    <p>Tratamientos faciales personalizados para realzar tu belleza natural con técnicas de vanguardia.</p>
-    <div class="hero-btns">
-      <a href="#turnos" class="btn-primary">Reservar turno</a>
-      <a href="#tratamientos" class="btn-primary">Ver tratamientos</a>
+    <div class="hero-content fade-in">
+        <span class="hero-tag">✦ Cosmetología profesional · Mendoza</span>
+        <h1>Tu piel merece<br><em>el mejor cuidado</em></h1>
+        <div class="hero-btns">
+            <a href="#turnos" class="btn-primary">Reservar turno</a>
+            <a href="#tratamientos" class="btn-primary" style="background:transparent; color:white; border-color:white;">Ver tratamientos</a>
+        </div>
     </div>
-  </div>
 </section>
-
-
 <!-- SOBRE MÍ -->
 <section class="sobre">
   <div class="sobre-inner">
@@ -444,55 +433,72 @@
   </div>
 </section>
 <section id="testimonios" class="testimonios">
-  <div class="test-inner">
-    <div class="section-head fade-in">
-      <span class="tag light">✦ Experiencias</span>
-      <h2 class="white">Lo que dicen nuestras clientas</h2>
+    <div class="test-inner">
+        <div class="section-head fade-in">
+            <span class="tag">✦ Google Reviews</span>
+            <h2>Lo que dicen nuestras clientas</h2>
+        </div>
+        <div class="test-carrusel fade-in">
+            <div class="test-track">
+                <div class="test-card">
+                    <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                    <div class="test-stars">★★★★★</div>
+                    <p>"Excelente atención de Lucía. Fui por una limpieza profunda y mi piel quedó divina. Súper recomendable!"</p>
+                    <span class="test-name">Agustina R. — Mendoza</span>
+                </div>
+                <div class="test-card">
+                    <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                    <div class="test-stars">★★★★★</div>
+                    <p>"Me encantó el Pack Glow. El lugar es hermoso y muy limpio. El sistema de turnos online es genial."</p>
+                    <span class="test-name">Valentina M. — Mendoza</span>
+                </div>
+                <div class="test-card">
+                    <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                    <div class="test-stars">★★★★★</div>
+                    <p>"Lucía es una genia, muy profesional y te explica todo. Mi piel cambió un 100%."</p>
+                    <span class="test-name">Carolina S. — Mendoza</span>
+                </div>
+                <div class="test-card">
+                    <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                    <div class="test-stars">★★★★★</div>
+                    <p>"Excelente atención de Lucía. Fui por una limpieza profunda y mi piel quedó divina."</p>
+                    <span class="test-name">Agustina R.</span>
+                </div>
+                <div class="test-card">
+                    <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                    <div class="test-stars">★★★★★</div>
+                    <p>"Me encantó el Pack Glow. El lugar es hermoso y muy limpio."</p>
+                    <span class="test-name">Valentina M.</span>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="test-carrusel fade-in">
-      <div class="test-track">
-        <div class="test-card">
-          <div class="test-stars">★★★★★</div>
-          <p>"¡El Pack Glow me dejó la piel increíble! Lucía es súper profesional y dulce. ¡Los hidralips son un sueño!"</p>
-          <span class="test-name">Sofía P. — Mendoza</span>
-        </div>
-
-        <div class="test-card">
-          <div class="test-stars">★★★★★</div>
-          <p>"Lifting de pestañas perfecto! No puedo creer el resultado. ¡Gracias Lucía por la paciencia!"</p>
-          <span class="test-name">Carolina G. — Tunuyán</span>
-        </div>
-
-        <div class="test-card">
-          <div class="test-stars">★★★★★</div>
-          <p>"Excelente atención. Me recomendó justo lo que mi piel necesitaba para la rosácea. Muy conforme."</p>
-          <span class="test-name">Martina L. — Luján</span>
-        </div>
-
-        <div class="test-card">
-          <div class="test-stars">★★★★★</div>
-          <p>"¡El Pack Glow me dejó la piel increíble! Lucía es súper profesional y dulce."</p>
-          <span class="test-name">Sofía P. — Mendoza</span>
-        </div>
-        <div class="test-card">
-          <div class="test-stars">★★★★★</div>
-          <p>"Lifting de pestañas perfecto! No puedo creer el resultado."</p>
-          <span class="test-name">Carolina G. — Tunuyán</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-logo">MARGOT <small>SKIN BEAUTY</small></div>
-    <div class="footer-links">
+
+<section id="ubicacion" class="ubicacion">
+    <div class="ubicacion-inner fade-in">
+        <div class="section-head">
+            <span class="tag">✦ Ubicación</span>
+            <h2>Vení a visitarnos</h2>
+        </div>
+        <div class="mapa-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.563!2d-68.847!3d-32.889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUzJzIwLjQiUyA2OMKwNTAnNDkuMiJX!5e0!3m2!1ses!2sar!4v1711464000000!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
-    <p class="footer-copy">© 2026 Margot Skin Beauty · Todos los derechos reservados</p>
-  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo">MARGOT <small>SKIN BEAUTY</small></div>
+        <p class="footer-copy">© 2026 Margot Skin Beauty · Mendoza, Argentina</p>
+    </div>
 </footer>
+
+<script>
+// Mantén tus scripts anteriores (Header scroll, Mobile Nav, FAQ, Acordeón, Formulario Fetch)
+window.addEventListener('scroll', () => {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+});
 
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/542615860906" target="_blank" class="wa-float" aria-label="WhatsApp">
