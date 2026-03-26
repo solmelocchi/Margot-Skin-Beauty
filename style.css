@@ -109,7 +109,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .val { background: var(--rosa-pal); border: 1px solid var(--borde); padding: 8px 16px; border-radius: 30px; font-size: 0.8rem; font-weight: 400; color: var(--marron); }
 
 /* ══ TRATAMIENTOS — foto de fondo oscura ══ */
-.tratamientos { padding: 120px 48px; background: linear-gradient(rgba(61,20,26,0.88), rgba(61,20,26,0.88)), url('tratamientos-bg.jpg') center/cover no-repeat fixed; }
+.tratamientos { padding: 120px 48px; background: linear-gradient(rgba(61,20,26,0.88), rgba(61,20,26,0.88)), url('tratamiento2.jpg') center/cover no-repeat fixed; }
 .tratamientos-inner { max-width: 1000px; margin: auto; }
 .section-head { text-align: center; margin-bottom: 60px; }
 .section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--marron); }
@@ -138,7 +138,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .cat-link:hover { color: var(--marron); }
 
 /* ══ ANTES Y DESPUÉS — foto de fondo ══ */
-.antes-despues { background: linear-gradient(rgba(92,40,48,0.84), rgba(92,40,48,0.84)), url('antesdespues-bg.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
+.antes-despues { background: linear-gradient(rgba(92,40,48,0.84), rgba(92,40,48,0.84)), url('tratamiento.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
 .ad-inner { max-width: 900px; margin: auto; }
 .carrusel-wrap { position: relative; display: flex; align-items: center; gap: 16px; margin-top: 40px; }
 .carrusel-viewport { flex: 1; overflow: hidden; border-radius: 20px; }
@@ -263,7 +263,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .faq-resp p { color: rgba(255,220,225,0.75); font-size: 0.85rem; line-height: 1.7; }
 
 /* ══ TURNOS ══ */
-.turnos { background: linear-gradient(rgba(61,20,26,0.92), rgba(61,20,26,0.94)), url('fondo-beauty.jpg') center/cover no-repeat; padding: 100px 48px; }
+.turnos { background: linear-gradient(rgba(61,20,26,0.92), rgba(61,20,26,0.94)), url('fondobeauti.jpg') center/cover no-repeat; padding: 100px 48px; }
 .turnos-inner { max-width: 900px; margin: auto; }
 .calendly-wrap { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin-top: 40px; }
 .consulta-extra { max-width: 700px; margin: 50px auto 0; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.2); }
