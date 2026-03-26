@@ -95,7 +95,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 /* ══ TRATAMIENTOS — foto de fondo ══ */
 .tratamientos {
   padding: 120px 48px;
-  background: linear-gradient(rgba(61,44,46,0.86), rgba(61,44,46,0.86)), url('tratamientos-bg.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(rgba(61,44,46,0.86), rgba(61,44,46,0.86)), url('tratamientos2.jpg') center/cover no-repeat fixed;
   position: relative;
 }
 .tratamientos-inner { max-width: 1000px; margin: auto; }
@@ -127,7 +127,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 
 /* ══ ANTES Y DESPUÉS — foto de fondo ══ */
 .antes-despues {
-  background: linear-gradient(rgba(61,44,46,0.82), rgba(61,44,46,0.82)), url('antesdespues-bg.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(rgba(61,44,46,0.82), rgba(61,44,46,0.82)), url('tratamiento.jpg') center/cover no-repeat fixed;
   padding: 120px 48px;
 }
 .ad-inner { max-width: 900px; margin: auto; }
