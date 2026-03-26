@@ -24,7 +24,10 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 
 /* ══ HEADER ══ */
 .header { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 20px 0; background: transparent; transition: background 0.4s, box-shadow 0.4s, padding 0.3s; }
-.header.scrolled { background: rgba(250,247,244,0.97); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(61,44,46,0.08); padding: 12px 0; }
+.header.scrolled {
+  background: rgba(250, 247, 244, 0.85); /* Bajamos de 0.97 a 0.85 */
+  backdrop-filter: blur(15px); /* Subimos el blur */
+   box-shadow: 0 2px 20px rgba(61,44,46,0.08); padding: 12px 0; }
 .header-inner { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 48px; }
 .logo-wrap { display: flex; align-items: center; gap: 12px; }
 .logo-text { display: flex; flex-direction: column; line-height: 1; }
@@ -168,9 +171,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .btn-catalogo:hover { background: var(--marron-med); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(61,44,46,0.25); }
 
 /* ══ PROMOS Y GIFT CARDS ══ */
-.promos {
-  padding: 120px 48px;
-  background: linear-gradient(rgba(250,247,244,0.96), rgba(250,247,244,0.96)), url('fondobeauti.jpg') center/cover no-repeat fixed;
+
 }
 .promos-inner { max-width: 1100px; margin: auto; }
 .promos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 0; margin-bottom: 70px; }
@@ -190,6 +191,45 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .promo-card.featured-promo .btn-promo { background: var(--marron); color: white; border-color: var(--marron); }
 .promo-card.featured-promo .btn-promo:hover { background: var(--marron-med); }
 
+/* ══ PROMOS Y GIFT CARDS — Fondo diferenciado ══ */
+.promos {
+  padding: 120px 48px;
+  /* Usamos un degradado que tire al rosa palo para diferenciarlo del crema de arriba */
+  background: linear-gradient(180deg, var(--rosa) 0%, #f7eeeb 100%);
+  position: relative;
+}
+
+.promo-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 32px;
+  border: 1px solid var(--rosa-osc); /* Borde un poquito más oscuro para que resalte */
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* CORRECCIÓN DE LEGIBILIDAD: El tag de arriba ahora tiene mejor contraste */
+.promo-tag-top {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--marron-med); /* Fondo oscuro para que la letra blanca/rosa resalte */
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 5px 18px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(61,44,46,0.15);
+}
+
+.promo-tag-top.destacado {
+  background: var(--marron); /* El más oscuro para el destacado */
+  color: var(--rosa);
+}
 /* Gift Card */
 .giftcard-wrap { display: flex; align-items: center; gap: 80px; background: white; border-radius: 24px; padding: 60px; border: 1px solid var(--rosa); flex-wrap: wrap; box-shadow: 0 8px 32px rgba(61,44,46,0.08); }
 .giftcard-texto { flex: 1; min-width: 280px; }
@@ -302,4 +342,80 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 @media (max-width: 520px) {
   .trat-grid { grid-template-columns: 1fr; } .hero-btns { flex-direction: column; align-items: center; }
   .carr-btn { display: none; } .prod-grid { grid-template-columns: 1fr; } .promos-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .beauty-form { gap: 20px; } /* Un poquito más de aire entre campos */
+}
+.prod-card:hover .prod-img-wrap img {
+  transform: translate(-50%, -55%) scale(1.1); /* Sube un poquito y se agranda */
+}
+
+.testimonios {
+  padding: 100px 24px;
+  /* Fondo oscuro para contrastar con la sección de Promos que ahora es clarita */
+  background: var(--marron); 
+  overflow: hidden;
+}
+
+.test-inner { max-width: 1200px; margin: auto; }
+
+.test-carrusel {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+
+/* El contenedor que se mueve */
+.test-track {
+  display: flex;
+  width: calc(350px * 10); /* Ajustar según cantidad de tarjetas */
+  animation: scrollInfinito 30s linear infinite;
+}
+
+/* Pausar al pasar el mouse para que puedan leer */
+.test-track:hover {
+  animation-play-state: paused;
+}
+
+.test-card {
+  width: 350px;
+  margin: 0 15px;
+  background: rgba(255, 255, 255, 0.05); /* Sutil transparencia */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.test-stars { 
+  color: var(--rosa-osc); 
+  margin-bottom: 20px; 
+  font-size: 1rem; 
+  letter-spacing: 3px;
+}
+
+.test-card p { 
+  color: var(--rosa); 
+  font-size: 0.95rem; 
+  line-height: 1.8; 
+  margin-bottom: 25px; 
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+.test-name { 
+  color: var(--gris); 
+  font-size: 0.75rem; 
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+  display: block;
+}
+
+/* Animación de desplazamiento */
+@keyframes scrollInfinito {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-350px * 5)); } /* Se mueve el ancho de las tarjetas originales */
 }
