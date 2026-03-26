@@ -265,8 +265,8 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 /* ══ TURNOS ══ */
 .turnos { background: linear-gradient(rgba(61,20,26,0.92), rgba(61,20,26,0.94)), url('fondobeauti.jpg') center/cover no-repeat; padding: 100px 48px; }
 .turnos-inner { max-width: 900px; margin: auto; }
-.calendly-wrap { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin-top: 40px; }
-.consulta-extra { max-width: 700px; margin: 50px auto 0; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.2); }
+.calendly-wrap { background: var(--rosa2); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin-top: 40px; }
+.consulta-extra { max-width: 700px; margin: 50px auto 0; background: var(--rosa2); padding: 40px; border-radius: 20px; box-shadow: 0 15px 45px rgba(0,0,0,0.2); }
 .consulta-head { text-align: center; margin-bottom: 28px; }
 .consulta-head h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--rosa2); margin-bottom: 8px; font-weight: 300; }
 .consulta-head p { font-size: 0.88rem; color: var(--texto-sua); }
