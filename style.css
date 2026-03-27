@@ -79,13 +79,19 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,0.5); font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; }
 .scroll-line { width: 1px; height: 40px; background: rgba(255,255,255,0.3); animation: scrollDown 1.5s ease-in-out infinite; }
+hero { 
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Heromargot.jpg') center/cover no-repeat; 
+}
+.btn-hero-solid { 
+    background: var(--rosa-bebe) !important; 
+    color: white !important; 
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(242, 203, 200, 0.4);
+}
+.btn-hero-solid:hover { background: var(--rosa-osc) !important; transform: translateY(-2px); }
 @keyframes scrollDown{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* Hero buttons */
-.btn-hero-solid { background: rgba(255,255,255,0.95); color: var(--rosa-bebe); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; border: 1px solid white; display: inline-block; transition: all 0.3s; }
-.btn-hero-solid:hover { background: var(--rosa-bebe); color: var(--rosa-bebe); transform: translateY(-2px); }
-.btn-hero-ghost { background: transparent; color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.55); display: inline-block; transition: all 0.3s; }
-.btn-hero-ghost:hover { border-color: white; background: rgba(255,255,255,0.12); }
 
 /* ══ BOTONES GENERALES ══ */
 .btn-primary { background: var(--acento); color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; border: 1px solid var(--acento); display: inline-block; transition: all 0.3s; cursor: pointer; font-family: 'Jost', sans-serif; }
@@ -117,12 +123,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .val { background: var(--blanco); border: 1px solid var(--borde); padding: 8px 16px; border-radius: 30px; font-size: 0.8rem; font-weight: 400; color: var(--acento); }
 
 /* ══ TRATAMIENTOS — foto oscura de fondo ══ */
-.tratamientos { padding: 120px 48px; background: var(--rosa-suave),(rgba(40,36,36,0.88), rgba(40,36,36,0.88)), url('tratamiento2.jpg') center/cover no-repeat fixed; }
 .tratamientos-inner { max-width: 1000px; margin: auto; }
-.section-head { text-align: center; margin-bottom: 60px; }
-.section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--gris-dark); }
-.section-head h2.white { color: white; }
-.trat-acord { border: 1px solid rgba(242,203,200,0.2); border-radius: 16px; overflow: hidden; margin-bottom: 14px; }
 .acord-btn { width: 100%; background: rgba(242,203,200,0.07); border: none; padding: 22px 28px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-family: 'Jost', sans-serif; transition: background 0.2s; }
 .acord-btn:hover { background: rgba(242,203,200,0.13); }
 .acord-btn.open { background: var(--blanco); }
@@ -145,7 +146,26 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .cat-link { display: inline-block; color: var(--acento); font-size: 0.82rem; font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--rosa-bebe); padding-bottom: 2px; transition: color 0.2s; }
 .cat-link:hover { color: var(--gris-dark); }
 
+.tratamientos { 
+    padding: 120px 48px; 
+    /* Overlay más claro para que se vea la imagen y el texto */
+    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('tratamiento2.jpg') center/cover no-repeat fixed; 
+}
+.section-head h2 { color: var(--gris-dark); font-weight: 400; }
+.acord-btn { background: var(--blanco); border: 1px solid var(--rosa-pal); margin-bottom: 5px; border-radius: 12px; }
+.acord-title { color: var(--gris-dark); font-weight: 500; }
+.acord-icon { color: var(--rosa-bebe); }
+.trat-card { background: var(--blanco); border: 1px solid var(--rosa-pal); }
+
 /* ══ ANTES Y DESPUÉS ══ */
+antes-despues { 
+    padding: 120px 48px; 
+    background: linear-gradient(rgba(251, 232, 230, 0.9), rgba(251, 232, 230, 0.9)), url('tratamiento.jpg') center/cover no-repeat fixed; 
+}
+.antes-despues h2 { color: var(--gris-dark) !important; }
+.carr-slide { background: var(--blanco); border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.carr-slide p { color: var(--gris-osc); font-weight: 400; }
+.carr-btn { background: var(--blanco); color: var(--rosa-osc); border: 1px solid var(--rosa-pal); }
 .antes-despues { background: var(--rosa-pal); linear-gradient(rgba(40,36,36,0.82), rgba(40,36,36,0.82)), url('tratamiento.jpg') center/cover no-repeat fixed; padding:  120px 48px; }
 .ad-inner { max-width: 900px; margin: auto; }
 .carrusel-wrap { position: relative; display: flex; align-items: center; gap: 16px; margin-top: 40px; }
@@ -271,7 +291,21 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .ubicacion-mapa iframe { border-radius: 16px; box-shadow: 0 12px 36px rgba(100,80,80,0.1); }
 
 /* ══ FAQ — fondo oscuro con imagen ══ */
-.faq { padding: 120px 48px; background: linear-gradient(rgba(40,36,36,0.88), rgba(40,36,36,0.88)), url('preguntasmargot.avif') center/cover no-repeat fixed; }
+.faq { 
+    padding: 120px 48px; 
+    /* Eliminamos el fondo negro, ponemos un rosa/crema suave */
+    background: linear-gradient(rgba(250, 247, 244, 0.92), rgba(250, 247, 244, 0.92)), url('preguntasmargot.avif') center/cover no-repeat fixed; 
+}
+.faq h2 { color: var(--gris-dark) !important; text-align: center; margin-bottom: 40px; }
+.faq-item { 
+    background: var(--blanco); 
+    border: 1px solid var(--rosa-pal); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    margin-bottom: 10px;
+}
+.faq-btn { color: var(--gris-dark); font-weight: 500; }
+.faq-resp p { color: var(--gris-osc); }
+.faq-icon { color: var(--rosa-osc); }
 .faq-inner { max-width: 760px; margin: auto; }
 .faq-list { display: flex; flex-direction: column; gap: 12px; }
 .faq-item { background: rgba(242,203,200,0.08); border: 1px solid rgba(242,203,200,0.15); border-radius: 14px; overflow: hidden; transition: border-color 0.2s; }
