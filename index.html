@@ -15,12 +15,11 @@
   <a href="#inicio"        onclick="closeNav()">Inicio</a>
   <a href="#tratamientos"  onclick="closeNav()">Tratamientos</a>
   <a href="#antes-despues" onclick="closeNav()">Resultados</a>
+  <a href="#turnos"        onclick="closeNav()">Turnos</a>
   <a href="#productos"     onclick="closeNav()">Productos</a>
   <a href="#promos"        onclick="closeNav()">Promos</a>
   <a href="#testimonios"   onclick="closeNav()">Reseñas</a>
   <a href="#faq"           onclick="closeNav()">Preguntas</a>
-  <a href="#turnos"        onclick="closeNav()">Turnos</a>
-  <a href="#contacto"      onclick="closeNav()">Contacto</a>
 </div>
 
 <!-- HEADER -->
@@ -59,10 +58,11 @@
       <a href="#tratamientos" class="btn-ghost">Ver tratamientos</a>
     </div>
   </div>
-
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
   </div>
 </section>
-
 
 
 <!-- SOBRE MÍ -->
@@ -71,15 +71,15 @@
     <div class="sobre-img fade-in-left">
       <img src="foto1.png" alt="Lucía - Cosmetóloga">
       <div class="sobre-badge">
-        <span class="badge-num">+5</span>
+        <span class="badge-num">+3</span>
         <span class="badge-txt">años de experiencia</span>
       </div>
     </div>
     <div class="sobre-texto fade-in-right">
       <span class="tag">✦ Sobre mí</span>
       <h2>Hola, soy<br><em>Lucía</em></h2>
-      <p>Soy cosmetóloga profesional especializada en tratamientos faciales personalizados. Mi misión es que cada clienta se sienta cómoda, cuidada y vea resultados reales desde la primera sesión.</p>
-      <p>Trabajo con productos de alta calidad y técnicas actualizadas para ofrecerte lo mejor en cuidado de la piel.</p>
+      <p>Soy Dermatocosmiatra, me especializo en tratamientos personalizados segun lo que necesite cada piel. Mi misión es que en cada sesión logren ver resultados reales, se relajen, se sientan cómodas y seguras.</p>
+      <p>Trabajo con productos formulados en laboratorios de farmacias, técnicas actualizadas, y cuento con productos para el apoyo domiciliario.</p>
       <div class="sobre-vals">
         <div class="val">Productos premium</div>
         <div class="val">Atención personalizada</div>
@@ -154,6 +154,7 @@
           <div class="trat-card"><h4>Acné</h4><p>Controla brotes, limpia la piel y previene nuevas imperfecciones.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
           <div class="trat-card"><h4>Hilos cosmetológicos</h4><p>Efecto lifting sin cirugía para mejorar firmeza y tonicidad.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
           <div class="trat-card"><h4>Exosomas</h4><p>Regeneración celular avanzada para una piel más joven y saludable.</p><a href="#turnos" class="trat-link">Reservar →</a></div>
+          <div class="trat-card"><h4>Exosomas Capilares</h4><p>Tratamiento avanzado de regeneración capilar que utiliza exosomas, activos biotecnológicos que estimulan la reparación celular del cuero cabelludo y fortalecen el cabello desde la raíz..</p><a href="#turnos" class="trat-link">Reservar →</a></div>
         </div>
         <a href="https://www.canva.com/design/DAGs4awJCug/ETMjLIBrblY1ajZrfKWo2g/view?utm_content=DAGs4awJCug&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74d9dac61c#5" target="_blank" class="cat-link">Ver guía completa →</a>
       </div>
@@ -202,6 +203,57 @@
     <div class="carr-dots" id="carrDots"></div>
   </div>
 </section>
+
+<!-- TURNOS -->
+<section id="turnos" class="turnos">
+  <div class="turnos-inner">
+    <div class="section-head fade-in">
+      <span class="tag light">✦ Agenda online</span>
+      <h2 class="white">Reservá tu turno</h2>
+      <p class="sub-light">Elegí el día y horario que mejor te quede</p>
+    </div>
+    <div class="calendly-wrap fade-in">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/margotskinbeauty20/margotskinbeauty" style="min-width:320px;height:700px;"></div>
+    </div>
+    <div class="consulta-extra fade-in">
+      <div class="consulta-head">
+        <h3>¿Ya reservaste tu turno?</h3>
+        <p>Completá estos datos para que pueda enviarte las indicaciones previas por WhatsApp.</p>
+      </div>
+      <form id="beauty-form" action="https://formspree.io/f/mgopvwrk" method="POST" class="beauty-form">
+        <div class="form-group">
+          <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+          <input type="email" name="email" placeholder="Tu email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="telefono" placeholder="WhatsApp (Ej: 261-XXX-XXXX)" required>
+          <select name="servicio" required>
+            <option value="" disabled selected>Elegí tu tratamiento</option>
+            <optgroup label="Limpiezas">
+              <option value="Limpieza simple">Limpieza simple</option>
+              <option value="Limpieza profunda">Limpieza profunda</option>
+              <option value="Dermaplaning">Dermaplaning</option>
+            </optgroup>
+            <optgroup label="Ojos y Labios">
+              <option value="Hidralips">Hidralips</option>
+              <option value="Lifting o Laminado">Lifting o Laminado</option>
+            </optgroup>
+            <optgroup label="Especializados">
+              <option value="Acné o Rosácea">Acné o Rosácea</option>
+              <option value="Antiage">Antiage</option>
+              <option value="Exosomas / Microneedling">Exosomas / Microneedling</option>
+               <option value="Exosomas Capilares">"Exosomas Capilares</option>
+            </optgroup>
+          </select>
+        </div>
+        <textarea name="mensaje" placeholder="Contame sobre tu tipo de piel o si tenés alguna alergia..." rows="3"></textarea>
+        <button type="submit" id="submit-btn" class="btn-primary">Enviar datos y pagar seña →</button>
+        <p id="form-status" style="margin-top:14px;font-size:0.88rem;text-align:center;display:none;"></p>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 <!-- PRODUCTOS -->
 <section id="productos" class="productos">
@@ -270,11 +322,11 @@
       <div class="promo-card">
         <div class="promo-tag-top">PROMO</div>
         <div class="promo-icon"></div>
-        <h3>Pack Iniciación</h3>
-        <p class="promo-desc">Limpieza profunda + perfilado de cejas. El combo ideal para empezar a cuidar tu piel.</p>
+        <h3>Facial premium </h3>
+        <p class="promo-desc">Limpieza profunda + microneedling + hidralips. El combo ideal para empezar a cuidar tu piel.</p>
         <div class="promo-precio">
-          <span class="precio-tachado">$35.000</span>
-          <span class="precio-final">$20.000</span>
+          <span class="precio-tachado">$50.000</span>
+          <span class="precio-final">$43.000</span>
         </div>
         <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Iniciaci%C3%B3n" target="_blank" class="btn-promo">Quiero esta promo →</a>
       </div>
@@ -283,11 +335,11 @@
       <div class="promo-card featured-promo">
         <div class="promo-tag-top destacado">MÁS POPULAR</div>
         <div class="promo-icon"></div>
-        <h3>Pack Glow</h3>
-        <p class="promo-desc">Limpieza con dermaplaning + laminado de cejas + hidralips. Salís radiante.</p>
+        <h3>Facial full Glow</h3>
+        <p class="promo-desc">Limpieza con dermaplaning + microneedling. Salís radiante.</p>
         <div class="promo-precio">
-          <span class="precio-tachado">$50.000</span>
-          <span class="precio-final">$45.000</span>
+          <span class="precio-tachado">$58.000</span>
+          <span class="precio-final">$48.000</span>
         </div>
         <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Glow" target="_blank" class="btn-promo">Quiero esta promo →</a>
       </div>
@@ -296,11 +348,11 @@
       <div class="promo-card">
         <div class="promo-tag-top">PROMO</div>
         <div class="promo-icon"></div>
-        <h3>Pack Antiage Express</h3>
-        <p class="promo-desc">Tratamiento antiage + lifting de pestañas. Rejuvenecé sin cirugía.</p>
+        <h3>Facial full Antiage</h3>
+        <p class="promo-desc">Limpieza profunda + plasma frío + microneedling + exosomas + masaje antiage. Rejuvenecé sin cirugía.</p>
         <div class="promo-precio">
-          <span class="precio-tachado">$35.000</span>
-          <span class="precio-final">$25.000</span>
+          <span class="precio-tachado">$60.000</span>
+          <span class="precio-final">$50.000</span>
         </div>
         <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20consultar%20por%20el%20Pack%20Antiage" target="_blank" class="btn-promo">Quiero esta promo →</a>
       </div>
@@ -315,19 +367,15 @@
         <p>Las Gift Cards de Margot son el regalo perfecto para quien querés que se mime. Disponibles en distintos montos, válidas para cualquier tratamiento.</p>
         <ul class="giftcard-lista">
           <li>✓ Válida para todos los tratamientos</li>
-          <li>✓ Un mes desde que se realiza el pago</li>
+          <li>✓ Sin fecha de vencimiento</li>
           <li>✓ Se entrega por WhatsApp o en consultorio</li>
           <li>✓ Combinable con promos vigentes</li>
         </ul>
         <a href="https://wa.me/542615860906?text=Hola%2C%20quiero%20regalar%20una%20Gift%20Card%20de%20Margot" target="_blank" class="btn-primary">Comprar Gift Card →</a>
       </div>
       <div class="giftcard-visual">
-        <div class="giftcard-mockup">
-          <div class="gc-deco">✦</div>
-          <span class="gc-brand">MARGOT</span>
-          <span class="gc-sub">SKIN BEAUTY</span>
-          <div class="gc-msg">Una experiencia<br><em>para vos</em></div>
-          <div class="gc-bottom">Gift Card · Consultorio · Mendoza</div>
+        <div class="giftcard-img-wrap">
+          <img src="giftcard.png" alt="Gift Card Margot Skin Beauty" class="giftcard-real-img">
         </div>
       </div>
     </div>
@@ -442,11 +490,10 @@ Recomiendo 100 % todos sus servicios."</p>
       <div class="ubi-datos">
         <div class="ubi-dato">📍 Mendoza, Argentina</div>
         <div class="ubi-dato">🕐 Lunes a Viernes · 9:00 a 18:00hs</div>
-      <p>Podés escribirme por WhatsApp o Instagram. Respondo a la brevedad.</p>
+        <p>Podés escribirme por WhatsApp o Instagram. Respondo a la brevedad.</p>
       <div class="contacto-links">
         <a href="https://wa.me/542615860906" class="btn-primary" target="_blank">WhatsApp →</a>
         <a href="https://www.instagram.com/margotskinbeauty" class="btn-outline" target="_blank">Instagram →</a>
-      </div>
       </div>
     </div>
     <div class="ubicacion-mapa fade-in-right">
@@ -491,56 +538,6 @@ Recomiendo 100 % todos sus servicios."</p>
     </div>
   </div>
 </section>
-
-<!-- TURNOS -->
-<section id="turnos" class="turnos">
-  <div class="turnos-inner">
-    <div class="section-head fade-in">
-      <span class="tag light">✦ Agenda online</span>
-      <h2 class="white">Reservá tu turno</h2>
-      <p class="sub-light">Elegí el día y horario que mejor te quede</p>
-    </div>
-    <div class="calendly-wrap fade-in">
-      <div class="calendly-inline-widget" data-url="https://calendly.com/margotskinbeauty20/margotskinbeauty" style="min-width:320px;height:700px;"></div>
-    </div>
-    <div class="consulta-extra fade-in">
-      <div class="consulta-head">
-        <h3>¿Ya reservaste tu turno?</h3>
-        <p>Completá estos datos para que pueda enviarte las indicaciones previas por WhatsApp.</p>
-      </div>
-      <form id="beauty-form" action="https://formspree.io/f/mgopvwrk" method="POST" class="beauty-form">
-        <div class="form-group">
-          <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-          <input type="email" name="email" placeholder="Tu email" required>
-        </div>
-        <div class="form-group">
-          <input type="tel" name="telefono" placeholder="WhatsApp (Ej: 261-XXX-XXXX)" required>
-          <select name="servicio" required>
-            <option value="" disabled selected>Elegí tu tratamiento</option>
-            <optgroup label="Limpiezas">
-              <option value="Limpieza simple">Limpieza simple</option>
-              <option value="Limpieza profunda">Limpieza profunda</option>
-              <option value="Dermaplaning">Dermaplaning</option>
-            </optgroup>
-            <optgroup label="Ojos y Labios">
-              <option value="Hidralips">Hidralips</option>
-              <option value="Lifting o Laminado">Lifting o Laminado</option>
-            </optgroup>
-            <optgroup label="Especializados">
-              <option value="Acné o Rosácea">Acné o Rosácea</option>
-              <option value="Antiage">Antiage</option>
-              <option value="Exosomas / Microneedling">Exosomas / Microneedling</option>
-            </optgroup>
-          </select>
-        </div>
-        <textarea name="mensaje" placeholder="Contame sobre tu tipo de piel o si tenés alguna alergia..." rows="3"></textarea>
-        <button type="submit" id="submit-btn" class="btn-primary">Enviar datos y pagar seña →</button>
-        <p id="form-status" style="margin-top:14px;font-size:0.88rem;text-align:center;display:none;"></p>
-      </form>
-    </div>
-  </div>
-</section>
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 <!-- FOOTER -->
 <footer class="footer">
