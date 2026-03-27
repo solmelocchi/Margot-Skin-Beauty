@@ -95,8 +95,6 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .btn-outline { background: transparent; color: var(--acento); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; border: 1px solid var(--acento); display: inline-block; transition: all 0.3s; }
 .btn-outline:hover { background: var(--acento); color: white; }
 
-
-
 /* ══ LABELS ══ */
 .tag { display: inline-block; color: var(--acento); font-size: 0.68rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; padding: 4px 14px; background: var(--rosa-pal); border-radius: 20px; border: 1px solid var(--borde); }
 .tag.light { color: var(--rosa-bebe); background: rgba(242,203,200,0.18); border-color: rgba(242,203,200,0.25); }
@@ -133,7 +131,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .acord-btn:hover { background: var(--rosa-suave); }
 .acord-btn.open { background: var(--rosa-pal); }
 .acord-left { display: flex; align-items: center; gap: 20px; }
-.acord-num { font-size: 0.7rem; color: var(--rosa-osc); border: 1px solid var(--borde); padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+.acord-num { font-size: 0.7rem; color: var(--rosa-osc); border: 1px solid var(--borde); padding: 3px 10px; border-radius: 20px; font-weight: 500; flex-shrink: 0; }
 .acord-btn.open .acord-num { border-color: var(--rosa-med); color: var(--acento); }
 .acord-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 300; color: var(--gris-dark); letter-spacing: 0.5px; }
 .acord-icon { font-size: 1.5rem; font-weight: 300; color: var(--rosa-osc); transition: transform 0.3s; flex-shrink: 0; }
@@ -339,11 +337,37 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
   .testi-card { flex: 0 0 calc((100% - 24px) / 2); }
 }
 @media (max-width: 640px) {
-  .trat-grid { grid-template-columns: 1fr; } .hero-btns { flex-direction: column; align-items: center; }
-  .carr-btn { display: none; } .prod-grid { grid-template-columns: 1fr; } .promos-grid { grid-template-columns: 1fr; }
+  .trat-grid { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; align-items: center; }
+  .carr-btn { display: none; }
+  .prod-grid { grid-template-columns: 1fr; }
+  .promos-grid { grid-template-columns: 1fr; }
   .testi-card { flex: 0 0 100%; }
   .giftcard-wrap { flex-direction: column; align-items: center; }
   .giftcard-img-wrap { width: 100%; max-width: 280px; }
-}
 
+  /* ══ FIX ACORDEÓN MOBILE ══ */
+  .acord-btn {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 20px;
+  }
+  .acord-left {
+    flex: 1;
+    min-width: 0;
+  }
+  .acord-num {
+    flex-shrink: 0;
+  }
+  .acord-title {
+    font-size: 1.05rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .acord-icon {
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+}
 
