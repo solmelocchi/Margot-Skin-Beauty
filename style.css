@@ -82,23 +82,20 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 @keyframes scrollDown{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
 /* Hero buttons */
-.btn-hero-solid { background: var(--rosa-bebe); color: var(--gris-dark); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; border: 1px solid var(--rosa-bebe); display: inline-block; transition: all 0.3s; }
-.btn-hero-solid:hover { background: var(--rosa-med); border-color: var(--rosa-med); color: var(--gris-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(242,203,200,0.5); }
+.btn-hero-solid { background: var(--rosa-osc); color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; border: 1px solid var(--rosa-osc); display: inline-block; transition: all 0.3s; }
+.btn-hero-solid:hover { background: var(--rosa-med); border-color: var(--rosa-med); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(214,148,144,0.4); }
 .btn-hero-ghost { background: transparent; color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.65); display: inline-block; transition: all 0.3s; }
 .btn-hero-ghost:hover { border-color: white; background: rgba(255,255,255,0.12); }
 
 /* ══ BOTONES GENERALES ══ */
-.btn-primary { background: var(--acento); color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; border: 1px solid var(--acento); display: inline-block; transition: all 0.3s; cursor: pointer; font-family: 'Jost', sans-serif; }
-.btn-primary:hover { background: var(--acento-med); transform: translateY(-2px); }
+.btn-primary { background: var(--rosa-osc); color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; border: 1px solid var(--rosa-osc); display: inline-block; transition: all 0.3s; cursor: pointer; font-family: 'Jost', sans-serif; }
+.btn-primary:hover { background: var(--rosa-med); border-color: var(--rosa-med); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(214,148,144,0.35); }
 .btn-ghost { background: transparent; color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.5); display: inline-block; transition: all 0.3s; }
 .btn-ghost:hover { border-color: white; background: rgba(255,255,255,0.1); }
 .btn-outline { background: transparent; color: var(--acento); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; border: 1px solid var(--acento); display: inline-block; transition: all 0.3s; }
 .btn-outline:hover { background: var(--acento); color: white; }
 
-/* ══ BAND ══ */
-.band { background: var(--gris-prof); display: flex; flex-wrap: wrap; justify-content: center; }
-.band span { color: rgba(242,203,200,0.75); font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 400; padding: 14px 24px; border-right: 1px solid rgba(255,255,255,0.1); }
-.band span:last-child { border-right: none; }
+
 
 /* ══ LABELS ══ */
 .tag { display: inline-block; color: var(--acento); font-size: 0.68rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; padding: 4px 14px; background: var(--rosa-pal); border-radius: 20px; border: 1px solid var(--borde); }
@@ -111,7 +108,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .sobre-inner { max-width: 1100px; margin: auto; display: flex; align-items: center; gap: 80px; flex-wrap: wrap; }
 .sobre-img { flex-shrink: 0; position: relative; }
 .sobre-img img { width: 400px; height: 520px; object-fit: cover; border-radius: 20px; display: block; box-shadow: 0 20px 60px rgba(100,80,80,0.15); }
-.sobre-badge { position: absolute; bottom: 30px; left: -20px; background: var(--acento); color: white; border-radius: 14px; padding: 14px 20px; text-align: center; min-width: 120px; box-shadow: 0 8px 24px rgba(100,80,80,0.25); }
+.sobre-badge { position: absolute; bottom: 30px; left: -20px; background: var(--rosa-osc); color: white; border-radius: 14px; padding: 14px 20px; text-align: center; min-width: 120px; box-shadow: 0 8px 24px rgba(214,148,144,0.35); }
 .badge-num { display: block; font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; line-height: 1; }
 .badge-txt { font-size: 0.68rem; letter-spacing: 0.5px; opacity: 0.85; }
 .sobre-texto { flex: 1; min-width: 280px; }
@@ -122,11 +119,15 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .val { background: var(--blanco); border: 1px solid var(--borde); padding: 8px 16px; border-radius: 30px; font-size: 0.8rem; font-weight: 400; color: var(--acento); }
 
 /* ══ TRATAMIENTOS — imagen de fondo visible con overlay rosa muy suave ══ */
-.tratamientos { padding: 120px 48px; background: linear-gradient(rgba(253,243,242,0.82), rgba(253,243,242,0.82)), url('tratamiento2.jpg') center/cover no-repeat fixed; }
+.tratamientos { padding: 120px 48px; background: linear-gradient(rgba(253,243,242,0.78), rgba(253,243,242,0.78)), url('tratamiento2.jpg') center/cover no-repeat fixed; }
 .tratamientos-inner { max-width: 1000px; margin: auto; }
 .section-head { text-align: center; margin-bottom: 60px; }
 .section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--gris-dark); }
 .section-head h2.white { color: var(--gris-dark); }
+/* Tag y subtítulo en tratamientos más visibles */
+.tratamientos .tag { color: var(--rosa-osc); background: rgba(214,148,144,0.15); border-color: var(--rosa-osc); font-weight: 600; }
+.tratamientos .tag.light { color: var(--rosa-osc); background: rgba(214,148,144,0.15); border-color: var(--rosa-osc); font-weight: 600; }
+.tratamientos .section-sub { color: var(--gris-prof); font-weight: 500; }
 .trat-acord { border: 1px solid var(--borde); border-radius: 16px; overflow: hidden; margin-bottom: 14px; box-shadow: 0 2px 12px rgba(200,150,150,0.08); }
 .acord-btn { width: 100%; background: white; border: none; padding: 22px 28px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-family: 'Jost', sans-serif; transition: background 0.2s; }
 .acord-btn:hover { background: var(--rosa-suave); }
@@ -150,7 +151,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .cat-link:hover { color: var(--gris-dark); }
 
 /* ══ ANTES Y DESPUÉS — imagen visible, fondo rosa pastel ══ */
-.antes-despues { background: linear-gradient(rgba(250,232,230,0.78), rgba(250,232,230,0.78)), url('antesdespues-bg.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
+.antes-despues { background: linear-gradient(rgba(250,232,230,0.78), rgba(250,232,230,0.78)), url('tratamiento.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
 .ad-inner { max-width: 900px; margin: auto; }
 .antes-despues .section-head h2.white { color: var(--gris-dark); }
 .antes-despues .tag.light { color: var(--acento); background: rgba(242,203,200,0.35); border-color: var(--borde); }
@@ -209,8 +210,8 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .btn-catalogo { display: inline-block; background: var(--acento); color: white; padding: 14px 32px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; transition: all 0.3s; }
 .btn-catalogo:hover { background: var(--acento-med); transform: translateY(-2px); box-shadow: 0 8px 24px var(--sombra); }
 
-/* ══ PROMOS — fondo gris pastel ══ */
-.promos { padding: 120px 48px; background: var(--gris-pal); }
+/* ══ PROMOS — fondo gris pastel con imagen ══ */
+.promos { padding: 120px 48px; background: linear-gradient(rgba(240,239,237,0.88), rgba(240,239,237,0.88)), url('contacto.png') center/cover no-repeat fixed; }
 .promos-inner { max-width: 1100px; margin: auto; }
 .promos .section-head h2 { color: var(--gris-dark); }
 .promos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 70px; }
@@ -292,20 +293,6 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .faq-resp { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 24px; background: var(--rosa-suave); }
 .faq-resp.open { max-height: 200px; padding: 0 24px 20px; }
 .faq-resp p { color: var(--texto-sua); font-size: 0.85rem; line-height: 1.7; padding-top: 14px; }
-
-/* ══ CONTACTO — fondo blanco con foto ══ */
-.contacto { padding: 120px 48px; background: url('contacto.png') center/cover no-repeat; position: relative; }
-.contacto::before { content: ''; position: absolute; inset: 0; background: rgba(248,244,242,0.94); }
-.contacto-inner { max-width: 1000px; margin: auto; display: flex; gap: 80px; align-items: center; flex-wrap: wrap; position: relative; z-index: 2; }
-.contacto-texto { flex: 1; min-width: 280px; }
-.contacto-texto h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--gris-dark); margin-bottom: 16px; line-height: 1.2; }
-.contacto-texto p { color: var(--texto-sua); font-size: 0.9rem; line-height: 1.7; margin-bottom: 28px; }
-.contacto-horario { color: var(--texto-sua); font-size: 0.82rem; }
-.contacto-deco { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 20px; }
-.deco-circle { width: 160px; height: 160px; border-radius: 50%; background: var(--rosa-pal); display: flex; align-items: center; justify-content: center; border: 1px solid var(--borde); }
-.deco-letter { font-family: 'Cormorant Garamond', serif; font-size: 4.5rem; font-weight: 300; color: var(--acento); font-style: italic; }
-.deco-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 220px; }
-.deco-tags span { background: white; color: var(--acento); padding: 6px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 400; border: 1px solid var(--borde); }
 
 /* ══ FOOTER — gris oscuro compacto ══ */
 .footer { background: var(--gris-dark); color: white; text-align: center; padding: 26px 40px; }
