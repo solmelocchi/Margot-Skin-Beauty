@@ -346,47 +346,4 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
   .giftcard-img-wrap { width: 100%; max-width: 280px; }
 }
 
-@media (max-width: 640px) {
-  /* 1. Ajuste del Título Principal */
-  .section-head h2 {
-    font-size: 1.6rem !important; /* Achicamos un poco más para que no desborde */
-    white-space: nowrap; /* Fuerza a que no salte de línea */
-  }
 
-  /* 2. El truco para el renglón único en los botones */
-  .acord-btn {
-    padding: 15px 10px !important; /* Menos relleno lateral */
-    display: flex !important;
-    flex-direction: row !important; /* Asegura que sea una fila, no columna */
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 8px !important; /* Espacio mínimo entre elementos */
-  }
-
-  .acord-left {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-    flex: 1; /* Toma todo el espacio disponible */
-    min-width: 0; /* Permite que el contenido se achique */
-  }
-
-  .acord-title {
-    font-size: 0.95rem !important; /* Tamaño justo para que entre 'Tratamientos especializados' */
-    white-space: nowrap; /* ¡Clave! Evita que la palabra baje */
-    letter-spacing: 0px !important; /* Quita espacio entre letras para ganar lugar */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Si llegara a ser MUY largo, pone puntos suspensivos en lugar de romperse */
-  }
-
-  .acord-num {
-    padding: 2px 6px !important; /* Número más compacto */
-    font-size: 0.65rem !important;
-    flex-shrink: 0; /* Que el círculo no se aplaste */
-  }
-
-  .acord-icon {
-    font-size: 1.2rem !important;
-    flex-shrink: 0;
-  }
-}
