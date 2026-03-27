@@ -345,3 +345,22 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
   .giftcard-wrap { flex-direction: column; align-items: center; }
   .giftcard-img-wrap { width: 100%; max-width: 280px; }
 }
+
+@media (max-width: 640px) {
+  .acord-btn {
+    padding: 15px 10px !important; /* Menos espacio interno para que entre el texto */
+    flex-direction: column; /* Apila el número y el texto si es necesario */
+    gap: 5px;
+  }
+  
+  .acord-title {
+    font-size: 1.1rem !important; /* Un poquito más chica la letra */
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+h1, h2, h3, .acord-title {
+  overflow-wrap: break-word; /* Evita que las palabras se salgan del borde */
+  word-wrap: break-word;
+}
