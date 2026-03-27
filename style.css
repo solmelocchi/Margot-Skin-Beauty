@@ -82,8 +82,8 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 @keyframes scrollDown{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
 /* Hero buttons */
-.btn-hero-solid { background: rgba(255,255,255,0.95); color: var(--gris-dark); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; border: 1px solid white; display: inline-block; transition: all 0.3s; }
-.btn-hero-solid:hover { background: var(--rosa-bebe); color: var(--gris-dark); transform: translateY(-2px); }
+.btn-hero-solid { background: rgba(255,255,255,0.95); color: var(--rosa-bebe); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; border: 1px solid white; display: inline-block; transition: all 0.3s; }
+.btn-hero-solid:hover { background: var(--rosa-bebe); color: var(--rosa-bebe); transform: translateY(-2px); }
 .btn-hero-ghost { background: transparent; color: white; padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.55); display: inline-block; transition: all 0.3s; }
 .btn-hero-ghost:hover { border-color: white; background: rgba(255,255,255,0.12); }
 
@@ -117,7 +117,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .val { background: var(--blanco); border: 1px solid var(--borde); padding: 8px 16px; border-radius: 30px; font-size: 0.8rem; font-weight: 400; color: var(--acento); }
 
 /* ══ TRATAMIENTOS — foto oscura de fondo ══ */
-.tratamientos { padding: 120px 48px; background: linear-gradient(rgba(40,36,36,0.88), rgba(40,36,36,0.88)), url('tratamiento2.jpg') center/cover no-repeat fixed; }
+.tratamientos { padding: 120px 48px; background: var(--rosa-suave),(rgba(40,36,36,0.88), rgba(40,36,36,0.88)), url('tratamiento2.jpg') center/cover no-repeat fixed; }
 .tratamientos-inner { max-width: 1000px; margin: auto; }
 .section-head { text-align: center; margin-bottom: 60px; }
 .section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--gris-dark); }
@@ -146,7 +146,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .cat-link:hover { color: var(--gris-dark); }
 
 /* ══ ANTES Y DESPUÉS ══ */
-.antes-despues { background: linear-gradient(rgba(40,36,36,0.82), rgba(40,36,36,0.82)), url('antesdespues-bg.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
+.antes-despues { background: var(--rosa-pal); linear-gradient(rgba(40,36,36,0.82), rgba(40,36,36,0.82)), url('tratamiento.jpg') center/cover no-repeat fixed; padding:  120px 48px; }
 .ad-inner { max-width: 900px; margin: auto; }
 .carrusel-wrap { position: relative; display: flex; align-items: center; gap: 16px; margin-top: 40px; }
 .carrusel-viewport { flex: 1; overflow: hidden; border-radius: 20px; }
