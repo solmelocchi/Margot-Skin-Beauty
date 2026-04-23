@@ -62,6 +62,17 @@
   </div>
 </header>
 
+  <!-- NAV MOBILE -->
+<div id="mobileNav" class="mobile-nav">
+  <a href="#inicio" onclick="closeNav()">Inicio</a>
+  <a href="#tratamientos" onclick="closeNav()">Tratamientos</a>
+  <a href="#antes-despues" onclick="closeNav()">Resultados</a>
+  <a href="#productos" onclick="closeNav()">Productos</a>
+  <a href="#promos" onclick="closeNav()">Promos</a>
+  <a href="#faq" onclick="closeNav()">FAQ</a>
+  <a href="#turnos" class="nav-cta" onclick="closeNav()">Reservar turno</a>
+</div>
+
 <!-- HERO -->
 <section id="inicio" class="hero">
   <div class="hero-overlay"></div>
@@ -572,15 +583,23 @@ window.addEventListener('scroll', () => {
 function toggleNav() {
   const nav = document.getElementById('mobileNav');
   const ham = document.getElementById('hamburger');
-  if (nav.classList.contains('open')) {
-    nav.classList.remove('open'); ham.classList.remove('open');
-    document.body.style.overflow = '';
-    setTimeout(() => nav.style.display = 'none', 400);
-  } else {
-    nav.style.display = 'flex';
-    requestAnimationFrame(() => { nav.classList.add('open'); ham.classList.add('open'); });
-    document.body.style.overflow = 'hidden';
-  }
+  if (!nav || !ham) return;
+
+  nav.classList.toggle('open');
+  ham.classList.toggle('open');
+
+  document.body.style.overflow =
+    nav.classList.contains('open') ? 'hidden' : '';
+}
+
+function closeNav() {
+  const nav = document.getElementById('mobileNav');
+  const ham = document.getElementById('hamburger');
+  if (!nav || !ham) return;
+
+  nav.classList.remove('open');
+  ham.classList.remove('open');
+  document.body.style.overflow = '';
 }
 function closeNav() {
   const nav = document.getElementById('mobileNav');
