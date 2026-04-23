@@ -601,13 +601,6 @@ function closeNav() {
   ham.classList.remove('open');
   document.body.style.overflow = '';
 }
-function closeNav() {
-  const nav = document.getElementById('mobileNav');
-  const ham = document.getElementById('hamburger');
-  nav.classList.remove('open'); ham.classList.remove('open');
-  document.body.style.overflow = '';
-  setTimeout(() => nav.style.display = 'none', 400);
-}
 
 // FAQ
 function toggleFaq(btn) {
