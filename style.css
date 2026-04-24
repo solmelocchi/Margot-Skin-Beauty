@@ -95,11 +95,6 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .btn-outline { background: transparent; color: var(--acento); padding: 13px 28px; border-radius: 30px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.5px; border: 1px solid var(--acento); display: inline-block; transition: all 0.3s; }
 .btn-outline:hover { background: var(--acento); color: white; }
 
-/* ══ BAND ══ */
-.band { background: var(--gris-prof); display: flex; flex-wrap: wrap; justify-content: center; }
-.band span { color: rgba(242,203,200,0.75); font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 400; padding: 14px 24px; border-right: 1px solid rgba(255,255,255,0.1); }
-.band span:last-child { border-right: none; }
-
 /* ══ LABELS ══ */
 .tag { display: inline-block; color: var(--acento); font-size: 0.68rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; padding: 4px 14px; background: var(--rosa-pal); border-radius: 20px; border: 1px solid var(--borde); }
 .tag.light { color: var(--rosa-bebe); background: rgba(242,203,200,0.18); border-color: rgba(242,203,200,0.25); }
@@ -136,7 +131,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .acord-btn:hover { background: var(--rosa-suave); }
 .acord-btn.open { background: var(--rosa-pal); }
 .acord-left { display: flex; align-items: center; gap: 20px; }
-.acord-num { font-size: 0.7rem; color: var(--rosa-osc); border: 1px solid var(--borde); padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+.acord-num { font-size: 0.7rem; color: var(--rosa-osc); border: 1px solid var(--borde); padding: 3px 10px; border-radius: 20px; font-weight: 500; flex-shrink: 0; }
 .acord-btn.open .acord-num { border-color: var(--rosa-med); color: var(--acento); }
 .acord-title { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 300; color: var(--gris-dark); letter-spacing: 0.5px; }
 .acord-icon { font-size: 1.5rem; font-weight: 300; color: var(--rosa-osc); transition: transform 0.3s; flex-shrink: 0; }
@@ -154,7 +149,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .cat-link:hover { color: var(--gris-dark); }
 
 /* ══ ANTES Y DESPUÉS — imagen visible, fondo rosa pastel ══ */
-.antes-despues { background: linear-gradient(rgba(250,232,230,0.78), rgba(250,232,230,0.78)), url('antesdespues-bg.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
+.antes-despues { background: linear-gradient(rgba(250,232,230,0.78), rgba(250,232,230,0.78)), url('tratamiento.jpg') center/cover no-repeat fixed; padding: 120px 48px; }
 .ad-inner { max-width: 900px; margin: auto; }
 .antes-despues .section-head h2.white { color: var(--gris-dark); }
 .antes-despues .tag.light { color: var(--acento); background: rgba(242,203,200,0.35); border-color: var(--borde); }
@@ -214,7 +209,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .btn-catalogo:hover { background: var(--acento-med); transform: translateY(-2px); box-shadow: 0 8px 24px var(--sombra); }
 
 /* ══ PROMOS — fondo gris pastel con imagen ══ */
-.promos { padding: 120px 48px; background: linear-gradient(rgba(240,239,237,0.88), rgba(240,239,237,0.88)), url('fondo-beauty.jpg') center/cover no-repeat fixed; }
+.promos { padding: 120px 48px; background: linear-gradient(rgba(240,239,237,0.88), rgba(240,239,237,0.88)), url('contacto.png') center/cover no-repeat fixed; }
 .promos-inner { max-width: 1100px; margin: auto; }
 .promos .section-head h2 { color: var(--gris-dark); }
 .promos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 70px; }
@@ -297,20 +292,6 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .faq-resp.open { max-height: 200px; padding: 0 24px 20px; }
 .faq-resp p { color: var(--texto-sua); font-size: 0.85rem; line-height: 1.7; padding-top: 14px; }
 
-/* ══ CONTACTO — fondo blanco con foto ══ */
-.contacto { padding: 120px 48px; background: url('contacto.png') center/cover no-repeat; position: relative; }
-.contacto::before { content: ''; position: absolute; inset: 0; background: rgba(248,244,242,0.94); }
-.contacto-inner { max-width: 1000px; margin: auto; display: flex; gap: 80px; align-items: center; flex-wrap: wrap; position: relative; z-index: 2; }
-.contacto-texto { flex: 1; min-width: 280px; }
-.contacto-texto h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--gris-dark); margin-bottom: 16px; line-height: 1.2; }
-.contacto-texto p { color: var(--texto-sua); font-size: 0.9rem; line-height: 1.7; margin-bottom: 28px; }
-.contacto-horario { color: var(--texto-sua); font-size: 0.82rem; }
-.contacto-deco { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 20px; }
-.deco-circle { width: 160px; height: 160px; border-radius: 50%; background: var(--rosa-pal); display: flex; align-items: center; justify-content: center; border: 1px solid var(--borde); }
-.deco-letter { font-family: 'Cormorant Garamond', serif; font-size: 4.5rem; font-weight: 300; color: var(--acento); font-style: italic; }
-.deco-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 220px; }
-.deco-tags span { background: white; color: var(--acento); padding: 6px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 400; border: 1px solid var(--borde); }
-
 /* ══ FOOTER — gris oscuro compacto ══ */
 .footer { background: var(--gris-dark); color: white; text-align: center; padding: 26px 40px; }
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 600px; margin: auto; }
@@ -356,9 +337,36 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
   .testi-card { flex: 0 0 calc((100% - 24px) / 2); }
 }
 @media (max-width: 640px) {
-  .trat-grid { grid-template-columns: 1fr; } .hero-btns { flex-direction: column; align-items: center; }
-  .carr-btn { display: none; } .prod-grid { grid-template-columns: 1fr; } .promos-grid { grid-template-columns: 1fr; }
+  .trat-grid { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; align-items: center; }
+  .carr-btn { display: none; }
+  .prod-grid { grid-template-columns: 1fr; }
+  .promos-grid { grid-template-columns: 1fr; }
   .testi-card { flex: 0 0 100%; }
   .giftcard-wrap { flex-direction: column; align-items: center; }
   .giftcard-img-wrap { width: 100%; max-width: 280px; }
+
+  /* ══ FIX ACORDEÓN MOBILE ══ */
+  .acord-btn {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 20px;
+  }
+  .acord-left {
+    flex: 1;
+    min-width: 0;
+  }
+  .acord-num {
+    flex-shrink: 0;
+  }
+  .acord-title {
+    font-size: 1.05rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .acord-icon {
+    flex-shrink: 0;
+    margin-left: auto;
+  }
 }
