@@ -137,7 +137,7 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .acord-icon { font-size: 1.5rem; font-weight: 300; color: var(--rosa-osc); transition: transform 0.3s; flex-shrink: 0; }
 .acord-btn.open .acord-icon { transform: rotate(45deg); color: var(--acento); }
 .acord-body { max-height: 0; overflow: hidden; transition: max-height 0.5s ease, padding 0.3s; padding: 0 28px; background: white; }
-.acord-body.open { max-height: 1200px; padding: 28px; }
+.acord-body.open { max-height: 2400px; padding: 28px; }
 .trat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-bottom: 20px; }
 .trat-card { background: var(--rosa-suave); border-radius: 14px; padding: 22px 18px; border: 1px solid var(--borde); transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s; display: flex; flex-direction: column; }
 .trat-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px var(--sombra); border-color: var(--rosa-med); }
