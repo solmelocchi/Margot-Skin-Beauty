@@ -19,7 +19,7 @@
 (function () {
   // El id de la planilla es lo que va entre /d/ y /edit en su direccion:
   // https://docs.google.com/spreadsheets/d/ESTO_DE_ACA/edit
-  const PLANILLA_ID = "";
+  const PLANILLA_ID = "1_m8bTsnsiHyhxOwDFGXqBp5SbpMGenbGagQJTCYAd-U";
 
   if (!PLANILLA_ID) return;
 
