@@ -192,6 +192,9 @@ body { font-family: 'Jost', sans-serif; background: var(--crema); color: var(--t
 .productos { padding: 120px 48px; background: var(--blanco); }
 .productos-inner { max-width: 1100px; margin: auto; }
 .prod-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+/* Un producto cargado en la planilla que todavia no tiene foto en la web:
+   se muestra igual, solo sin la imagen de arriba. */
+.prod-card.sin-foto .prod-info { padding-top: 22px; }
 .prod-card { background: var(--rosa-suave); border-radius: 18px; overflow: hidden; border: 1px solid var(--borde); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
 .prod-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(100,80,80,0.11); }
 .prod-img-wrap { width: 100%; padding-top: 100%; position: relative; background: var(--blanco); overflow: hidden; border-bottom: 1px solid var(--borde); }
